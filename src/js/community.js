@@ -8,6 +8,8 @@ let communities = [].slice.call(
 //Add events
 communities.map(addCommunitySelectEvent);
 
+selectCommunity(communities[0]);
+
 function addCommunitySelectEvent(e) {
   e.addEventListener(
     'click',
@@ -16,8 +18,11 @@ function addCommunitySelectEvent(e) {
 }
 
 function selectCommunity(e) {
+  if(!e.currentTarget)
+    elem = e;
+
   // Get data
-  let current = e.currentTarget,
+  let current = elem ? elem : e.currentTarget,
       name = current.dataset.name,
       desc = current.dataset.desc;
       img = current.dataset.image;

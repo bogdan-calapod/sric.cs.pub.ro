@@ -15,27 +15,40 @@ function addCourseSelectEvent(e) {
   );
 }
 
+selectCourse(courseElements[0]);
+
 function selectCourse(e) {
-  if(e.currentTarget.classList.contains('disabled'))
-    return;
+  let elem;
+
+  if(e.currentTarget){
+    if(e.currentTarget.classList.contains('disabled'))
+      return;
+  } else
+    elem = e;
 
   // Get data
-  let current = e.currentTarget,
+  let current = elem ? elem : e.currentTarget,
       name = current.dataset.name,
+      roname = current.dataset.roname,
       desc = current.dataset.desc,
       url = current.dataset.url,
       imageSrc = current.dataset.image,
       teacherData = JSON.parse(current.dataset.teachers);
 
   // Get elements
-  let header = document.querySelector(courseSection + '.content h2'),
-      body = document.querySelector(courseSection + '.content .text'),
-      image = document.querySelector(courseSection + '.content .info img'),
-      link = document.querySelector(courseSection + '.content a'),
-      teachers = document.querySelector(courseSection + '.teachers');
+  let header = document.querySelector( courseSection + '.content h2' ),
+      subheader = document.querySelector( courseSection + '.content h3' ),
+      body = document.querySelector( courseSection + '.content .text' ),
+      image = document.querySelector( courseSection + '.content .info img' ),
+      link = document.querySelector( courseSection + '.content a' ),
+      teachers = document.querySelector( courseSection + '.teachers' );
+
+  // Replace newlines with <br>
+  desc = desc.replace( /(?:\r\n|\r|\n)/g, '<br /><br />' );
 
   // Assign data
   header.innerHTML = name;
+  subheader.innerHTML = roname;
   body.innerHTML = desc;
   link.href = url;
   image.src = imageSrc;

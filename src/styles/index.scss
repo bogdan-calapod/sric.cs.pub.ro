@@ -12,7 +12,7 @@ $yellow: #FBB03B;
 @import 'sections/header';
 @import 'sections/why';
 @import 'sections/courses';
-
+@import 'sections/career';
 
 .right {
   float: right;
@@ -27,7 +27,8 @@ section {
   @include span-columns(12);
 
   h1,
-  h2 {
+  h2,
+  h3 {
     @include shift(1);
 
     color: $blue;
@@ -41,10 +42,15 @@ section {
     }
   }
 
-  h2 {
+  h2, h3 {
     @include shift(0);
     font-size: 30px;
     text-transform: none;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-family: $regularFont;
   }
 }
 

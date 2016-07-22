@@ -1,0 +1,30 @@
+section.career {
+  > p,
+  .row {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  .row {
+    @include row();
+  }
+
+  .perspective {
+
+    display: flex;
+    flex-direction: row;
+
+    img {
+      margin: 10px;
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      h3,
+      p {
+        text-align: right;
+      }
+    }
+  }
+}

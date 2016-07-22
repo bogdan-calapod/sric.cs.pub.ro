@@ -61,6 +61,11 @@ section.courses {
 
     .info {
       @include span-columns(2);
+
+      button {
+        width: 200px;
+        font-size: 16px;
+      }
     }
   }
 }

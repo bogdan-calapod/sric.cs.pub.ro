@@ -1,6 +1,7 @@
 include ./partials/sections/header.pug
 include ./partials/sections/why.pug
 include ./partials/sections/courses.pug
+include ./partials/sections/career.pug
 doctype html
 html
   head
@@ -10,4 +11,5 @@ html
     +header(locals.data.courses)
     +why(locals.data.copy.why)
     +courses(locals.data.courses)
+    +career(locals.data.copy.career)
 

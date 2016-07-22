@@ -45,4 +45,5 @@ ncp('./src/styles/font', './build/css/font');
 // Move static assets
 ncp('./src/img', './build/img');
 
-//TODO Compile JavaScript
+// Get JS
+ncp('./src/js', './build/js');

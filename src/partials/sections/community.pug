@@ -7,7 +7,8 @@ mixin community(data)
       .row
         - for (let i = 0; i < data.activities.length; i++)
           - let current = data.activities[i];
-          .entry(data-name=current.name data-desc=current.desc data-image=current.image)
+          - let image = 'img/assets/' + current.image
+          .entry(data-name=current.name data-desc=current.desc data-image=image)
             p #{current.name}
 
     .content

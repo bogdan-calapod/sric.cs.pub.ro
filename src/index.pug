@@ -10,6 +10,7 @@ html
     title="SRIC Master 2016"
     link(rel="stylesheet" href="css/style.css")
   body
+
     +header(locals.data.courses)
     +why(locals.data.copy.why)
     +courses(locals.data.courses)
@@ -17,3 +18,5 @@ html
     +community(locals.data.copy.community)
     +people(locals.data.people)
 
+    script(src='js/courses.js')
+    script(src='js/community.js')

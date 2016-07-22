@@ -1,5 +1,16 @@
+// Vendor imports
 @import 'neat';
+@import 'vendor/normalize';
 
-div.bla {
-  @include span-columns(1);
+// Website imports
+@import 'font/fonts';
+@import 'sections/header';
+
+.right {
+  float: right;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $regularFont;
 }

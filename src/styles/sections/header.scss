@@ -1,0 +1,145 @@
+header {
+  height: 100vh;
+
+  background-image: url('../img/header.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  overflow: hidden;
+
+  .logos {
+    padding: 10px;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  .globe {
+    position: relative;
+    display: block;
+
+    height: 100%;
+    margin: 0 auto;
+    top: -5%;
+
+    animation-name: globe;
+    animation-duration: 500s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+
+  .sric {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+
+    height: 35vh;
+    left: 0;
+    right: 0;
+    top: 25%;
+
+    animation-name: sric;
+    animation-duration: 1s;
+  }
+
+  .scrollers {
+    position: absolute;
+    top: 70%;
+
+    .scroller {
+      display: inline-block;
+
+      height: 30px;
+      width: 100%;
+
+      white-space: nowrap;
+      span {
+        font-size: 30px;
+        font-family: $lightFont;
+        text-transform: uppercase;
+
+        color: rgba(255,255,255,0.2);
+        margin: 0 15px;
+      }
+
+      &.right {
+        transform: translateX(100%);
+
+        float: none;
+        animation: scrollRight 200s linear infinite;
+
+        &:nth-child(1) {
+          animation-duration: 100s;
+        }
+        &:nth-child(2) {
+          animation-duration: 150s;
+        }
+      }
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+
+    left: 0;
+    right: 0;
+    bottom: 30px;
+
+    cursor: pointer;
+
+    transition: 0.4s all;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}
+
+@keyframes globe {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.2) rotate(360deg);
+  }
+
+  0% {
+    transform: scale(0.8) rotate(0deg);
+  }
+}
+
+@keyframes sric {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollRight {
+  0% {
+    transform: translateX(-50%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

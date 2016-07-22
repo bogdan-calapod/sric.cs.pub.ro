@@ -1,7 +1,9 @@
+include ./partials/sections/header.pug
 doctype html
 html
   head
     title="SRIC Master 2016"
     link(rel="stylesheet" href="css/style.css")
   body
-    include ./partials/test.pug
+    +header(locals.data.courses)
+

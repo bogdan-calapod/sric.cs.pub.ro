@@ -1,0 +1,27 @@
+mixin header(courses)
+  header
+    .logos
+      img(src='img/logos/systems.svg')
+      img.right(src='img/logos/upb.svg')
+    img.globe(src='img/assets/globe.svg')
+    img.sric(src='img/logos/sric.svg')
+
+    .scrollers
+      .scroller.right
+        - for(let rep = 0; rep < 10; rep++)
+          - for(let i = 0; i < courses.sem1.length; i++)
+            - let current = courses.sem1[i]
+            span #{current.name}
+
+      .scroller.right
+        - for(let rep = 0; rep < 10; rep++)
+          - for(let i = 0; i < courses.sem2.length; i++)
+            - let current = courses.sem2[i]
+            span #{current.name}
+
+      .scroller.right
+        - for(let rep = 0; rep < 10; rep++)
+          - for(let i = 0; i < courses.sem3.length; i++)
+            - let current = courses.sem3[i]
+            span #{current.name}
+    img.arrow(src='img/assets/arrow.svg')

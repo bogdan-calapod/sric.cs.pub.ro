@@ -27,11 +27,13 @@
   },
   "homepage": "https://gitlab.com/TechLounge/sric-website#README",
   "devDependencies": {
+    "ncp": "^2.0.0",
     "node-sass": "^3.8.0",
     "npm-watch": "^0.1.5",
     "pug": "^2.0.0-beta4"
   },
   "dependencies": {
-    "bourbon-neat": "^1.8.0"
+    "bourbon-neat": "^1.8.0",
+    "normalize.css": "^4.2.0"
   }
 }

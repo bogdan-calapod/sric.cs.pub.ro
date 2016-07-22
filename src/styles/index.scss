@@ -1,0 +1,5 @@
+@import 'neat';
+
+div.bla {
+  @include span-columns(1);
+}

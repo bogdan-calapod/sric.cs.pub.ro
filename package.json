@@ -1,0 +1,37 @@
+{
+  "name": "sric-website",
+  "version": "1.0.0",
+  "description": "SRIC Master website",
+  "main": "index.js",
+  "watch": {
+    "build": {
+      "patterns": [
+        "*"
+      ],
+      "extensions": "js,scss,pug"
+    }
+  },
+  "scripts": {
+    "dev": "npm run watch",
+    "build": "node ./build.js",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/TechLounge/sric-website.git"
+  },
+  "author": "Bogdan Calapod | Tech Lounge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/TechLounge/sric-website/issues"
+  },
+  "homepage": "https://gitlab.com/TechLounge/sric-website#README",
+  "devDependencies": {
+    "node-sass": "^3.8.0",
+    "npm-watch": "^0.1.5",
+    "pug": "^2.0.0-beta4"
+  },
+  "dependencies": {
+    "bourbon-neat": "^1.8.0"
+  }
+}

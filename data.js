@@ -24,22 +24,22 @@ let data = {
     ],
     sem2 : [
       {
-        name: 'Network Security',
+        name: 'Network Security2',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
         optional: false
       },
       {
-        name: 'Network service management',
+        name: 'Network service management2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         optional: false
       },
       {
-        name: 'OS Development',
+        name: 'OS Development2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         optional: false
       },
       {
-        name: 'Something something',
+        name: 'Something something2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         optional: true
       }

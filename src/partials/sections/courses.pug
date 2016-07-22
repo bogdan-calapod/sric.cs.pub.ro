@@ -1,0 +1,35 @@
+mixin courses(courses)
+  section.courses
+    h1.right Courses
+
+    .selector
+      .row
+        .title
+          p First semester
+        - for (let i = 0; i < courses.sem1.length; i++)
+          - let current = courses.sem1[i];
+          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+            p #{courses.sem1[i].name}
+      .row
+        .title
+          p Second semester
+        - for (let i = 0; i < courses.sem2.length; i++)
+          - let current = courses.sem1[i];
+          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+            p #{courses.sem2[i].name}
+      .row
+        .title
+          p Third semester
+        - for (let i = 0; i < courses.sem3.length; i++)
+          - let current = courses.sem1[i];
+          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+            p #{courses.sem3[i].name}
+
+    .course
+      h2 Auditing network security
+      .text
+        p Non laborum sit nostrud aliqua occaecat minim eu aliqua occaecat pariatur fugiat exercitation proident minim pariatur nulla. Enim anim proident qui ut ullamco magna veniam sit dolore. Amet laboris ex in exercitation duis do eiusmod minim et officia enim id minim qui labore mollit. Amet nulla reprehenderit ipsum non pariatur culpa officia ipsum dolore. Commodo minim ex duis officia esse deserunt veniam in ex aute consectetur enim cupidatat exercitation anim.
+        p Laboris ipsum adipisicing adipisicing voluptate nostrud et tempor Lorem veniam officia quis. Tempor magna officia excepteur incididunt excepteur non pariatur aliqua dolor ipsum dolor mollit do ipsum dolore. Officia fugiat voluptate laborum esse est aute consequat amet amet magna laborum consequat amet minim magna ipsum. Ex deserunt labore culpa amet sunt cupidatat deserunt tempor enim. Nulla duis esse aliqua consequat eiusmod id labore velit pariatur labore sunt magna aliquip esse.
+      .info
+        img(src='img/assets/course.png')
+        button.plane Course resources

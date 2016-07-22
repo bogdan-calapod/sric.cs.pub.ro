@@ -2,14 +2,17 @@
 @import 'neat';
 @import 'vendor/normalize';
 
+//Colors
+$blue: #063551;
+$orange: #E08003;
+$yellow: #FBB03B;
+
 // Website imports
 @import 'font/fonts';
 @import 'sections/header';
 @import 'sections/why';
+@import 'sections/courses';
 
-//Colors
-$blue: #063551;
-$orange: #E08003;
 
 .right {
   float: right;
@@ -23,13 +26,25 @@ body {
 section {
   @include span-columns(12);
 
-  h1 {
+  h1,
+  h2 {
     @include shift(1);
 
     color: $blue;
     font-family: $boldFont;
     font-size: 60px;
     text-transform: uppercase;
+
+    &.right {
+      @include span-columns(10);
+      text-align: right;
+    }
+  }
+
+  h2 {
+    @include shift(0);
+    font-size: 30px;
+    text-transform: none;
   }
 }
 
@@ -48,11 +63,7 @@ button {
 
   cursor: pointer;
 
-  &.arrow {
-    text-align: left;
-  }
-
-  &.arrow:after {
+  &:after {
     content: '';
     width: 20px;
     height: 20px;
@@ -60,8 +71,15 @@ button {
     display: inline-block;
     vertical-align: middle;
 
-    background-image: url(../img/assets/buttonArrow.svg);
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &.arrow:after {
+    background-image: url(../img/assets/buttonArrow.svg);
+  }
+
+  &.plane:after {
+    background-image: url(../img/assets/plane.svg);
   }
 }

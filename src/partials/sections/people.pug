@@ -1,0 +1,12 @@
+mixin people(data)
+  section.people
+    h1.right People
+
+    .peopleList
+      - for(let i=0; i < data.length; i++)
+        - let current = data[i]
+        - let image = 'img/people/' + current.photo
+        .person
+          img(src=image)
+          h2 #{current.name}
+          h3 #{current.position}

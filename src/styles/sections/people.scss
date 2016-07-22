@@ -1,0 +1,18 @@
+section.people {
+  .peopleList {
+    @include span-columns(8);
+    @include shift(2);
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .person {
+    width: calc(100% / 4);
+    text-align: center;
+
+  }
+}

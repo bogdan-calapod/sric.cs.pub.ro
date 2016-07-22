@@ -114,7 +114,29 @@ let data = {
         }
       ]
     }
-  }
+  },
+  people: [
+    {
+      name: 'Ion Ionescu',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
+      name: 'Ion Popescu',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
+      name: 'Florin Ionescu',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
+      name: 'Ion Andreescu',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    }
+  ]
 };
 
 module.exports = {data};

@@ -8,11 +8,11 @@ mixin entryGenerator(data, teachers)
       - teacher = JSON.stringify(teachers.filter(e => current.teachers.indexOf(e.name) > -1))
     - else
       - teacher = '["ntz"]';
-      
-    - let image = 'img/assets/' + current.image
+
+    - let image = 'img/courses/' + current.image
 
     - if(current.active)
-      .entry(data-name=current.name data-desc=current.desc
+      .entry(data-name=current.name data-roname=current.roname data-desc=current.desc
         data-image=image data-url=current.url data-teachers=teacher)
         p #{current.name}
 

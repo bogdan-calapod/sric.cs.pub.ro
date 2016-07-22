@@ -8,6 +8,9 @@ section.courses {
   }
 
   .content {
+    a {
+      transition: 0.4s opacity;
+    }
 
     .teacher {
       display: inline-block;

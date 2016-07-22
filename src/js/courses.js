@@ -15,19 +15,15 @@ function addCourseSelectEvent(e) {
   );
 }
 
-selectCourse(courseElements[0]);
+selectCourse({currentTarget: courseElements[0]});
 
 function selectCourse(e) {
-  let elem;
+  if(e.currentTarget.classList.contains('disabled'))
+    return;
 
-  if(e.currentTarget){
-    if(e.currentTarget.classList.contains('disabled'))
-      return;
-  } else
-    elem = e;
 
   // Get data
-  let current = elem ? elem : e.currentTarget,
+  let current = e.currentTarget,
       name = current.dataset.name,
       roname = current.dataset.roname,
       desc = current.dataset.desc,
@@ -50,8 +46,14 @@ function selectCourse(e) {
   header.innerHTML = name;
   subheader.innerHTML = roname;
   body.innerHTML = desc;
-  link.href = url;
   image.src = imageSrc;
+
+  if(url != '') {
+    link.style.opacity = '1';
+    link.href = url;
+  } else {
+    link.style.opacity = '0';
+  }
 
   teachers.innerHTML = '';
   teacherData.map(

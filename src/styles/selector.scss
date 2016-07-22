@@ -37,12 +37,22 @@
   .entry {
     transition: 0.4s all;
 
-    &:hover,
+    &:hover:not(.disabled),
     &.active {
       background-color: $blue;
       border-left: 5px solid $yellow;
       color: white;
       cursor: pointer;
+    }
+
+    &.disabled {
+      color: #999;
+      text-transform: uppercase;
+    }
+
+    &.long {
+      width: calc(100% / 1.5);
+      text-align: center;
     }
   }
 }

@@ -1,3 +1,33 @@
 section.courses {
+  h2 {
+    margin-bottom: 0;
+  }
 
+  h3 {
+    margin-top: 0;
+  }
+
+  .content {
+
+    .teacher {
+      display: inline-block;
+      margin-right: 10px;
+
+      img,
+      h2 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      img {
+        height: 60px;
+        margin-right: 10px;
+      }
+
+      h2 {
+        font-size: 16px;
+        font-family: $regularFont;
+      }
+    }
+  }
 }

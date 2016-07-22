@@ -10,11 +10,12 @@ html
   head
     title="SRIC Master 2016"
     link(rel="stylesheet" href="css/style.css")
+    meta(charset="utf-8")
   body
 
     +header(locals.data.courses)
     +why(locals.data.copy.why)
-    +courses(locals.data.courses)
+    +courses(locals.data.courses, locals.data.people)
     +career(locals.data.copy.career)
     +community(locals.data.copy.community)
     +people(locals.data.people)

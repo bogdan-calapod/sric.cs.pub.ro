@@ -2,80 +2,111 @@ let data = {
   courses: {
     sem1 : [
       {
-        name: 'Network Security',
+        name: 'Computer and Network Security ',
+        roname: 'Securitatea Calculatoarelor și Rețelelor',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'Network service management',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'OS Development',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'Something something',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       }
     ],
     sem2 : [
       {
         name: 'Network Security2',
+        roname: 'Securitatea',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Ion Ionescu',
+        active: true
       },
       {
         name: 'Network service management2',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'OS Development2',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'Something something2',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       }
     ],
     sem3 : [
       {
         name: 'Network Security',
+        roname: 'Securitatea',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
         url: 'http://google.com',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'Network service management',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
         name: 'OS Development',
+        roname: 'Securitatea',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
         url: '',
-        image: ''
+        image: '',
+        teachers: 'Răzvan Deaconescu,Dan Gioga,Adrian Furtună',
+        active: true
       },
       {
-        name: 'Something something',
-        desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        url: '',
-        image: ''
+        name: 'Optional',
+        active: false
       }
     ]
   },
@@ -129,22 +160,22 @@ let data = {
   },
   people: [
     {
+      name: 'Răzvan Deaconescu',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
+      name: 'Dan Gioga',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
+      name: 'Adrian Furtună',
+      position: 'Teacher assistant',
+      photo: 'ionionescu.jpg'
+    },
+    {
       name: 'Ion Ionescu',
-      position: 'Teacher assistant',
-      photo: 'ionionescu.jpg'
-    },
-    {
-      name: 'Ion Popescu',
-      position: 'Teacher assistant',
-      photo: 'ionionescu.jpg'
-    },
-    {
-      name: 'Florin Ionescu',
-      position: 'Teacher assistant',
-      photo: 'ionionescu.jpg'
-    },
-    {
-      name: 'Ion Andreescu',
       position: 'Teacher assistant',
       photo: 'ionionescu.jpg'
     }

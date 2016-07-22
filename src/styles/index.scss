@@ -5,6 +5,11 @@
 // Website imports
 @import 'font/fonts';
 @import 'sections/header';
+@import 'sections/why';
+
+//Colors
+$blue: #063551;
+$orange: #E08003;
 
 .right {
   float: right;
@@ -13,4 +18,50 @@
 body {
   overflow-x: hidden;
   font-family: $regularFont;
+}
+
+section {
+  @include span-columns(12);
+
+  h1 {
+    @include shift(1);
+
+    color: $blue;
+    font-family: $boldFont;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+}
+
+button {
+  width: 250px;
+  height: 30px;
+
+  border: 0;
+
+  text-transform: uppercase;
+  font-family: $regularFont;
+  font-size: 20px;
+
+  color: white;
+  background-color: $orange;
+
+  cursor: pointer;
+
+  &.arrow {
+    text-align: left;
+  }
+
+  &.arrow:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    background-image: url(../img/assets/buttonArrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }

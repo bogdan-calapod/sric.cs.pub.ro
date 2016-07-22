@@ -8,11 +8,14 @@ $orange: #E08003;
 $yellow: #FBB03B;
 
 // Website imports
+@import 'selector';
 @import 'font/fonts';
 @import 'sections/header';
 @import 'sections/why';
 @import 'sections/courses';
 @import 'sections/career';
+@import 'sections/community';
+
 
 .right {
   float: right;

@@ -21,7 +21,6 @@ function selectCommunity(e) {
       name = current.dataset.name,
       desc = current.dataset.desc;
       img = current.dataset.image;
-      // TODO: photo, url
 
   // Get elements
   let header = document.querySelector(commSection + '.content h2'),

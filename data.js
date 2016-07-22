@@ -4,66 +4,78 @@ let data = {
       {
         name: 'Network Security',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'Network service management',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'OS Development',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'Something something',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: true
+        url: '',
+        image: ''
       }
     ],
     sem2 : [
       {
         name: 'Network Security2',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'Network service management2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'OS Development2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'Something something2',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: true
+        url: '',
+        image: ''
       }
     ],
     sem3 : [
       {
         name: 'Network Security',
         desc: 'Irure aliquip nostrud culpa ad exercitation proident in sint Lorem labore ipsum anim eu id aliqua eu.',
-        optional: false
+        url: 'http://google.com',
+        image: ''
       },
       {
         name: 'Network service management',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'OS Development',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: false
+        url: '',
+        image: ''
       },
       {
         name: 'Something something',
         desc: 'Excepteur cupidatat aliqua ea do veniam sint incididunt elit voluptate voluptate non commodo adipisicing consequat anim.',
-        optional: true
+        url: '',
+        image: ''
       }
     ]
   },
@@ -100,17 +112,17 @@ let data = {
         {
           name: 'Hacker\'s Night Out',
           desc: 'Anim qui pariatur qui tempor consequat magna incididunt Lorem occaecat dolor deserunt quis est enim. Duis dolore sint est anim nulla nostrud aute culpa nisi nisi. Commodo id est cillum officia non adipisicing fugiat consequat labore velit non deserunt eiusmod reprehenderit laborum. Ipsum pariatur do incididunt in laboris qui est cupidatat et sit et officia tempor id ut proident. Commodo quis ipsum incididunt do aliqua elit ex aliqua amet ut voluptate. Officia et ad dolore ullamco adipisicing fugiat aliquip eiusmod anim.',
-          image: 'hackers.png'
+          image: 'hackers.jpg'
         },
         {
           name: 'Capture The Flag',
           desc: 'Tempor est tempor fugiat proident irure est ea laboris in eiusmod voluptate commodo pariatur. Voluptate minim anim deserunt proident sit tempor ex consectetur amet aute tempor elit laboris. Ea elit eu ea labore sint duis commodo exercitation. Cupidatat enim sunt irure amet ea magna sint sunt veniam consectetur labore eiusmod non deserunt. Laborum id dolore enim ex in proident laboris eu dolor cupidatat qui eu nostrud sunt. Tempor pariatur officia est tempor laboris do cupidatat occaecat reprehenderit adipisicing enim aliqua officia.',
-          image: 'ctf.png'
+          image: 'ctf.jpg'
         },
         {
           name: 'Security Summer School',
           desc: 'Mollit laboris dolor eu et nostrud ipsum enim. Nostrud veniam sit aliqua reprehenderit id culpa occaecat duis ex id adipisicing sint laboris velit deserunt aute occaecat. Qui ipsum amet do esse ad nostrud nostrud ullamco duis aliqua qui. Occaecat ullamco aute pariatur consequat cillum Lorem duis sint dolore laboris consequat dolore laboris laborum cupidatat proident.',
-          image: 'sss.png'
+          image: 'sss.jpg'
         }
       ]
     }

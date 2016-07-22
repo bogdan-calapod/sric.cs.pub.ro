@@ -7,22 +7,28 @@ mixin courses(courses)
         .title
           p First semester
         - for (let i = 0; i < courses.sem1.length; i++)
-          - let current = courses.sem1[i];
-          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+          - let current = courses.sem1[i]
+          - let image = 'img/assets/' + current.image
+          .entry(data-name=current.name data-desc=current.desc
+            data-image=image data-url=current.url)
             p #{courses.sem1[i].name}
       .row
         .title
           p Second semester
         - for (let i = 0; i < courses.sem2.length; i++)
-          - let current = courses.sem2[i];
-          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+          - let current = courses.sem2[i]
+          - let image = 'img/assets/' + current.image
+          .entry(data-name=current.name data-desc=current.desc
+            data-image=image data-url=current.url)
             p #{courses.sem2[i].name}
       .row
         .title
           p Third semester
         - for (let i = 0; i < courses.sem3.length; i++)
-          - let current = courses.sem3[i];
-          .entry(data-name=current.name data-desc=current.desc data-optional=current.optional)
+          - let current = courses.sem3[i]
+          - let image = 'img/assets/' + current.image
+          .entry(data-name=current.name data-desc=current.desc
+            data-image=image data-url=current.url)
             p #{courses.sem3[i].name}
 
     .content
@@ -32,4 +38,5 @@ mixin courses(courses)
         p Laboris ipsum adipisicing adipisicing voluptate nostrud et tempor Lorem veniam officia quis. Tempor magna officia excepteur incididunt excepteur non pariatur aliqua dolor ipsum dolor mollit do ipsum dolore. Officia fugiat voluptate laborum esse est aute consequat amet amet magna laborum consequat amet minim magna ipsum. Ex deserunt labore culpa amet sunt cupidatat deserunt tempor enim. Nulla duis esse aliqua consequat eiusmod id labore velit pariatur labore sunt magna aliquip esse.
       .info
         img(src='img/assets/course.png')
-        button.plane Course resources
+        a(href='#')
+          button.plane Course resources

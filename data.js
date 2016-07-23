@@ -31,7 +31,7 @@ let data = {
         teachers: 'Dragoș Niculescu',
         active: true
       }, {
-        name: 'Optional course',
+        name: 'Elective course',
         active: false
       }, {
         name: 'Research',
@@ -63,10 +63,10 @@ let data = {
         teachers: 'Mihai Carabaș',
         active: true
       }, {
-        name: 'Optional course',
+        name: 'Elective course',
         active: false
       }, {
-        name: 'Optional course',
+        name: 'Elective course',
         active: false
       }, {
         name: 'Research',
@@ -95,10 +95,10 @@ let data = {
         teachers: 'Nicolae Țăpuș, Mihai Carabaș',
         active: true
       }, {
-        name: 'Optional Course',
+        name: 'Elective Course',
         active: false
       }, {
-        name: 'Optional Course',
+        name: 'Elective Course',
         active: false
       }, {
         name: 'Research',

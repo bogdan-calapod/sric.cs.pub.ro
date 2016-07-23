@@ -33,4 +33,36 @@ section.courses {
       }
     }
   }
+
+  .entry.disabled {
+    position: relative;
+  }
+
+  .row .entry.disabled:after {
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    bottom: -100%;
+    z-index: 100;
+    padding: 5px;
+
+    content: 'The list of elective courses will be available in October 2016.';
+
+    text-transform: none;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+
+    opacity: 0;
+    transition: 0.4s all;
+  }
+
+  .row .entry.disabled:hover:after {
+    opacity: 1;
+    height: 50px;
+  }
+
+  .row .entry.disabled:last-child:after{
+    display: none;
+  }
 }

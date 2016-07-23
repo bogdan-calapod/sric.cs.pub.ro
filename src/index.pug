@@ -1,5 +1,6 @@
 include ./partials/sections/header.pug
 include ./partials/sections/why.pug
+include ./partials/sections/howtoapply.pug
 include ./partials/sections/courses.pug
 include ./partials/sections/career.pug
 include ./partials/sections/community.pug
@@ -15,6 +16,7 @@ html
 
     +header(locals.data.courses)
     +why(locals.data.copy.why)
+    +howtoapply
     +courses(locals.data.courses, locals.data.people)
     +career(locals.data.copy.career)
     +community(locals.data.copy.community)

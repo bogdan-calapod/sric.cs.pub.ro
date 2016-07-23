@@ -93,4 +93,8 @@ button {
   &.plane:after {
     background-image: url(../img/assets/plane.svg);
   }
+
+  &.download:after {
+    background-image: url(../img/assets/buttonDownload.svg);
+  }
 }

@@ -1,0 +1,8 @@
+&.right {
+  text-align: right;
+
+  li:before {
+    left: auto;
+    right: -60px;
+  }
+}

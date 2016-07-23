@@ -1,0 +1,11 @@
+.step.registration {
+  > h1:after {
+    background-image: url(../img/assets/regDiamond.svg);
+  }
+
+  p span {
+    color: $orange;
+    font-weight: 600;
+  }
+
+}

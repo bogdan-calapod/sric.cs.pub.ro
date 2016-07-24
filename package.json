@@ -4,7 +4,7 @@
   "description": "SRIC Master website",
   "main": "index.js",
   "watch": {
-    "build": {
+    "devBuild": {
       "patterns": [
         "*"
       ],
@@ -13,7 +13,8 @@
   },
   "scripts": {
     "dev": "npm run watch",
-    "build": "node ./build.js",
+    "devBuild" : "node ./build.js",
+    "build": "node ./build.js --prod",
     "watch": "npm-watch"
   },
   "repository": {

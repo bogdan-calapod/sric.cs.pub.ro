@@ -134,27 +134,30 @@ let data = {
     },
     community: {
       activities: [
-      {
-        name: 'Hacker\'s Night Out',
-        desc: `What’s the point of keeping the world cybersafe if we don’t get to tell all those fabulous stories?
-        Are you a SRIC student? Are you a SRIC teacher? Are you something else? Hold up your wizard night plans for Friday, October 21rd 2016, and join us to Hackers’ Night Out! We’ll be board-gaming, karaoking, musicing, dancing and hacking all around in Room 706 PRECIS from 20:00 till dawn. Don’t knock, come in!
-        Please address your inquires to the master of ceremonies at sric@systems.cs.pub.ro`,
-        customButton: 'E-mail MC',
-        url:'mailto:sric@systems.cs.pub.ro',
-        image: 'hackers.jpg'
-      }, {
-        name: 'Capture The Flag',
-        desc: `Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place in June 2017!
-        In 2016, the third edition of the Security Summer School engaged students between June 20th and July 25th, at the Faculty of Automatic Control and Computers, UPB, focusing on Practical Software Exploitation. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor.
-        Activities took place during three intensive training sessions per week, as well as two Capture the Flag (CTF) contests which were held mid-term and at the end of the summer school.
-        The final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.`,
-        url: 'https://security.cs.pub.ro/summer-school/wiki/',
-        image: 'ctf.jpg'
-      }, {
-        name: 'Security Summer School',
-        desc: 'Mollit laboris dolor eu et nostrud ipsum enim. Nostrud veniam sit aliqua reprehenderit id culpa occaecat duis ex id adipisicing sint laboris velit deserunt aute occaecat. Qui ipsum amet do esse ad nostrud nostrud ullamco duis aliqua qui. Occaecat ullamco aute pariatur consequat cillum Lorem duis sint dolore laboris consequat dolore laboris laborum cupidatat proident.',
-        image: 'sss.jpg'
-      } ]
+        {
+          name: 'Security Summer School',
+          desc: 'Mollit laboris dolor eu et nostrud ipsum enim. Nostrud veniam sit aliqua reprehenderit id culpa occaecat duis ex id adipisicing sint laboris velit deserunt aute occaecat. Qui ipsum amet do esse ad nostrud nostrud ullamco duis aliqua qui. Occaecat ullamco aute pariatur consequat cillum Lorem duis sint dolore laboris consequat dolore laboris laborum cupidatat proident.',
+          image: 'sss.jpg'
+        },
+        {
+          name: 'Capture The Flag',
+          desc: `Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place in June 2017!
+          In 2016, the third edition of the Security Summer School engaged students between June 20th and July 25th, at the Faculty of Automatic Control and Computers, UPB, focusing on Practical Software Exploitation. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor.
+          Activities took place during three intensive training sessions per week, as well as two Capture the Flag (CTF) contests which were held mid-term and at the end of the summer school.
+          The final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.`,
+          url: 'https://security.cs.pub.ro/summer-school/wiki/',
+          image: 'ctf.jpg'
+        },
+        {
+          name: 'Hacker\'s Night Out',
+          desc: `What’s the point of keeping the world cybersafe if we don’t get to tell all those fabulous stories?
+          Are you a SRIC student? Are you a SRIC teacher? Are you something else? Hold up your wizard night plans for Friday, October 21rd 2016, and join us to Hackers’ Night Out! We’ll be board-gaming, karaoking, musicing, dancing and hacking all around in Room 706 PRECIS from 20:00 till dawn. Don’t knock, come in!
+          Please address your inquires to the master of ceremonies at sric@systems.cs.pub.ro`,
+          customButton: 'E-mail MC',
+          url:'mailto:sric@systems.cs.pub.ro',
+          image: 'hackers.jpg'
+        }
+      ]
     }
   },
   people: [

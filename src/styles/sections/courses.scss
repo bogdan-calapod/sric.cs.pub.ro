@@ -40,7 +40,7 @@ section.courses {
 
   .row .entry.disabled:after {
     position: absolute;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     left: 0;
     bottom: -100%;
@@ -59,7 +59,7 @@ section.courses {
 
   .row .entry.disabled:hover:after {
     opacity: 1;
-    height: 50px;
+    max-height: 150px;
   }
 
   .row .entry.disabled:last-child:after{

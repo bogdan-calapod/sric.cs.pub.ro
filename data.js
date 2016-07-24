@@ -1,3 +1,25 @@
+let research = {
+  name: 'Research',
+  roname: '',
+  desc: `Research projects may address topics such as: network architectures, operating systems, wireless sensor networks, peer-to-peer systems, network security and mobile platforms.
+  Network architecture research focuses on designing, implementing, optimizing and evaluating communication networks. Research covers all network communication layers, taking into consideration both the hardware and software solutions required for building a communication network.
+  OS research aims to take advantage of new platforms and improve resource management, in the context opened by the exponential development of mobile solutions;
+  WSN research focuses on improving resource consumption, scalability, adaptability, reliability, fault-tolerance, security, self-configurability and QoS in sensor networks, with a focus on security mechanisms, trust and reputation models, routing protocols and simulation tools;
+  The main challenges in the Peer-to-Peer systems consist of dealing with rogue peers, differentiated participation, high peer churn, and resource availability. In order to solve these challenges, research has focused on developing and testing new architectures for resource sharing, new communication protocols, extending current clients and evaluating new and efficient ways of peer interaction.
+  Network security research focuses on improving authentication protocols, intrusion detection and prevention systems, and network device security.
+  Mobile devices raise several development challenges, such as power consumption, application connectivity, and reduced screen real-estate. Research tries to tackle these challenges by leveraging operating system features, designing new and improved algorithms for resource management, and using the latest technologies for interconnecting devices.`,
+  url: 'https://systems.cs.pub.ro/teaching/master-projects/',
+  customButton: 'Topics & calendar',
+  image: 'research.jpg',
+  teachers: 'Laura Gheorghe',
+  active: true
+};
+
+let optional = {
+  name: 'Elective Course',
+  active: false
+};
+
 let data = {
   courses: {
     sem1: [
@@ -14,9 +36,7 @@ let data = {
       }, {
         name: 'Network Service Management',
         roname: 'Gestiunea Serviciilor de Reţea',
-        desc: `Cursul de Gestiunea Serviciilor de Retea transmite cunostinte si competente in zona administrarii de servicii de retea si configurare de aplicatii specifice.
-
-        Se urmareste un profil de sysdevops, o persoana capabila sa inteleaga specificul infrastructurii si sistemelor cu care lucreaza si sa aiba competentele pentru dezvoltarea a noi utilitare care sa asigure scalabilitaea si flexibilitea infrastructurii.
+        desc: `The Network Service Management course trains students for sysdevops activities, challenging them to understand the specificity of the infrastructures and systems they work with, and to develop new solutions to ensure infrastructure scalability and flexibility. The course enhances abilities for network management and configuring specific services.
         `,
         url: 'http://ocw.cs.pub.ro/courses/gsr',
         image: 'gsr.jpg',
@@ -30,13 +50,9 @@ let data = {
         image: 'wsn.jpg',
         teachers: 'Dragoș Niculescu',
         active: true
-      }, {
-        name: 'Elective course',
-        active: false
-      }, {
-        name: 'Research',
-        active: false
-      }
+      },
+      optional,
+      research
     ],
     sem2: [
       {
@@ -62,16 +78,10 @@ let data = {
         image: 'saisp.jpg',
         teachers: 'Mihai Carabaș',
         active: true
-      }, {
-        name: 'Elective course',
-        active: false
-      }, {
-        name: 'Elective course',
-        active: false
-      }, {
-        name: 'Research',
-        active: false
-      }
+      },
+      optional,
+      optional,
+      research
     ],
     sem3: [
       {
@@ -94,20 +104,18 @@ let data = {
         image: 'spd.jpg',
         teachers: 'Nicolae Țăpuș, Mihai Carabaș',
         active: true
-      }, {
-        name: 'Elective Course',
-        active: false
-      }, {
-        name: 'Elective Course',
-        active: false
-      }, {
-        name: 'Research',
-        active: false
-      }
+      },
+      optional,
+      optional,
+      research
     ]
   },
   copy: {
-    why: 'Laboris commodo nisi tempor excepteur officia consequat sit ipsum magna ea ullamco laboris amet voluptate ullamco laborum. Sint officia minim do nostrud adipisicing nulla adipisicing Lorem incididunt exercitation id quis consequat laboris nulla. Reprehenderit non anim cillum excepteur id esse sit amet adipisicing amet incididunt magna quis. Ipsum quis ex adipisicing Lorem laborum et officia nulla minim laboris id enim. Ea proident in reprehenderit nisi aliqua esse deserunt aliqua. Occaecat minim eiusmod irure Lorem cillum tempor velit ut mollit eiusmod duis fugiat aliqua tempor qui nulla laboris.',
+    why: [
+      `Security professionals are increasingly called upon to migrate from the boundaries and gates of information systems to the very core of  digital infrastructure design and management. Information systems are permeating all fields of daily lives, from the intimate zones of the household to the corporate world. Appliances become interconnected in the Internet of Things; people work, chat, and observe reality through mobile connections; entire continents of business migrate to the cloud. Meanwhile, the stakes of malicious attacks become higher, and vulnerabilities increase, in the mismatch of old and new technologies and interconnected platforms.`,
+
+      `Join SRIC to gain indepth knowledge, hands-on mastery and broader perspectives on a variety of technologies of cybersecurity. Make your voice heard in the SRIC community of alumni, professors, students and security specialists.`
+    ],
     career: {
       desc: 'Velit ea non ipsum eiusmod eu duis enim officia in cillum anim. Sunt commodo fugiat proident ex irure Lorem amet excepteur consequat consectetur. Est est officia est proident proident ut nulla sit Lorem id fugiat aliquip nulla laboris id voluptate officia. Amet do esse nostrud ad et aliqua elit mollit sunt fugiat sint ex sint consequat. Do aliqua veniam enim laborum cillum officia ex reprehenderit id duis.',
       careers: [ {
@@ -147,6 +155,11 @@ let data = {
   },
   people: [
     {
+      name: 'Ion Bică',
+      position: 'Professor',
+      photo: 'ionbica.jpg'
+    },
+    {
       name: 'Marius Bunget',
       position: 'Assistant Professor',
       photo: 'mariusbunget.jpg'
@@ -155,6 +168,11 @@ let data = {
       name: 'Mihai Carabaș',
       position: 'Assistant Professor',
       photo: 'mihaicarabas.jpg'
+    },
+    {
+      name: 'Alex Carp',
+      position: 'Assistant Professor',
+      photo: 'alexcarp.jpg'
     },
     {
       name: 'Mihai Chiroiu',
@@ -172,19 +190,19 @@ let data = {
       photo: 'adrianfurtuna.jpg'
     },
     {
-      name: 'Radu Petean',
+      name: 'Laura Gheorghe',
       position: 'Assistant Professor',
-      photo: 'radupetean.jpg'
-    },
-    {
-      name: 'Ion Bică',
-      position: 'Professor',
-      photo: 'ionbica.jpg'
+      photo: 'lauragheorghe.jpg'
     },
     {
       name: 'Dragoș Niculescu',
       position: 'Professor',
       photo: 'dragosniculescu.jpg'
+    },
+    {
+      name: 'Radu Petean',
+      position: 'Assistant Professor',
+      photo: 'radupetean.jpg'
     },
     {
       name: 'Răzvan Rughiniș',

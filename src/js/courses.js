@@ -48,6 +48,12 @@ function selectCourse(e) {
   body.innerHTML = desc;
   image.src = imageSrc;
 
+  // Set custom button text if exists
+  if(current.dataset.custombutton)
+    link.querySelector('button').innerHTML = current.dataset.custombutton;
+  else
+    link.querySelector('button').innerHTML = 'Course resources';
+
   if(url != '') {
     link.style.opacity = '1';
     link.href = url;

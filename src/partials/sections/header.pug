@@ -24,4 +24,5 @@ mixin header(courses)
           - for(let i = 0; i < courses.sem3.length; i++)
             - let current = courses.sem3[i]
             span #{current.name}
-    img.arrow(src='img/assets/arrow.svg')
+    a(href='#why' data-scroll)
+      img.arrow(src='img/assets/arrow.svg')

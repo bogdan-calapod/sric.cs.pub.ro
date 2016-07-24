@@ -6,7 +6,7 @@ mixin community(data)
         - for (let i = 0; i < data.activities.length; i++)
           - let current = data.activities[i];
           - let image = 'img/assets/' + current.image
-          .entry(data-name=current.name data-desc=current.desc data-image=image)
+          .entry(data-name=current.name data-desc=current.desc data-image=image data-url=current.url data-custombutton=current.customButton)
             p #{current.name}
 
     .content
@@ -14,3 +14,5 @@ mixin community(data)
       .text
         h2
         p
+        a
+          button

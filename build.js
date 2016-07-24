@@ -10,10 +10,11 @@ let data = require('./data.js');
 
 let config = {
   siteData: data,
+  gzipAssets: PROD,
   sassOptions: {
     file: './src/styles/index.scss',
     out: './build/css/style.css',
-    sourceMap: PROD ? false : true,
+    sourceMap: !PROD,
     includePaths: require('bourbon-neat').includePaths,
     outputStyle: PROD ? 'compressed' : 'nested'
   }
@@ -23,7 +24,6 @@ let g = new Generator(config);
 
 g.renderPug(data)
  .renderStyles()
- .copyStaticAssets()
- .copyJavaScript();
+ .processAssets();
 
 

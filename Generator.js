@@ -9,6 +9,7 @@ let pug = require('pug');
 let sass = require('node-sass');
 let fs = require('fs');
 let ncp = require('ncp').ncp;
+let zip = require('node-targz');
 
 class Generator {
   constructor(config) {
@@ -16,6 +17,7 @@ class Generator {
     this.setConfig(config);
   }
 
+  /// PUBLIC FUNCTIONS ///
   setConfig(config) {
     if(config)
       this.config = config;
@@ -52,22 +54,49 @@ class Generator {
     return this;
   }
 
-  copyStaticAssets() {
-    console.log('[StatGen] Copying static assets');
+  processAssets() {
+    console.log('[StatGen] Processing assets');
 
+    this._copyStaticAssets()
+        ._copyJavaScript();
+
+    if(this.config.gzipAssets == true)
+      this._gzipAssets();
+
+    return this;
+  }
+
+  /// PRIVATE FUNCTIONS ///
+  _copyStaticAssets() {
     // Move static assets
     ncp('./src/img', './build/img');
 
     return this;
   }
 
-  copyJavaScript() {
-    console.log('[StatGen] Copying JavaScript');
-    
+  _copyJavaScript() {
     // Get JS
     ncp('./src/js', './build/js');
 
     return this;
+  }
+
+  _gzipAssets() {
+    // TODO: Dynamically get file list from tree
+    let fileList = [
+      './build/index.html',
+      './build/css/style.css',
+      './build/js/community.js',
+      './build/js/courses.js',
+      './build/js/howtoapply.js',
+    ];
+
+    fileList.map(
+      file => zip.compress({
+        source: file,
+        destination: file + '.gz'
+      })
+    );
   }
 }
 

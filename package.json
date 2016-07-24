@@ -13,7 +13,7 @@
   },
   "scripts": {
     "dev": "npm run watch",
-    "devBuild" : "node ./build.js",
+    "devBuild": "node ./build.js",
     "build": "node ./build.js --prod",
     "watch": "npm-watch"
   },
@@ -30,6 +30,7 @@
   "devDependencies": {
     "ncp": "^2.0.0",
     "node-sass": "^3.8.0",
+    "node-targz": "^0.1.2",
     "npm-watch": "^0.1.5",
     "pug": "^2.0.0-beta4"
   },

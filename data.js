@@ -92,7 +92,7 @@ let data = {
         After completing the course, students will acquire the capacity to diagnose functioning problems in complex networks, especially security problems, and to propose alternative solutions, taking into account financial, time, and human resource constraints. Students will also develop their knowledge and skills concerning the provision and evaluation of information security, their capacity to find relevant information for current problems, to communicate directly, to elaborate technical documents and to put to practical use information from scientific research concerning complex network security.`,
         url: '',
         image: 'asr.jpg',
-        teachers: 'Ion Bica, Adrian Furtună',
+        teachers: 'Ion Bică, Adrian Furtună',
         active: true
       }, {
         name: 'Parallel and Distributed Systems',
@@ -182,6 +182,11 @@ let data = {
       name: 'Mihai Chiroiu',
       position: 'Assistant Professor',
       photo: 'mihaichiroiu.jpg'
+    },
+    {
+      name: 'Dan Gioga',
+      position: 'Assistant Professor',
+      photo: 'dangioga.jpg'
     },
     {
       name: 'Răzvan Deaconescu',

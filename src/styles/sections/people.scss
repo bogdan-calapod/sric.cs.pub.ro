@@ -1,7 +1,7 @@
 section.people {
   .peopleList {
-    @include span-columns(8);
-    @include shift(2);
+    @include span-columns(10);
+    @include shift(1);
 
     display: flex;
     flex-direction: row;
@@ -11,8 +11,21 @@ section.people {
   }
 
   .person {
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     text-align: center;
 
+    h2 {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-size: 15px;
+      margin-top: 0;
+    }
+
+    img {
+      height: 150px;
+    }
   }
 }

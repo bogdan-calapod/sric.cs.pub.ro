@@ -117,29 +117,32 @@ let data = {
       `Join SRIC to gain indepth knowledge, hands-on mastery and broader perspectives on a variety of technologies of cybersecurity. Make your voice heard in the SRIC community of alumni, professors, students and security specialists.`
     ],
     career: {
-      desc: 'Velit ea non ipsum eiusmod eu duis enim officia in cillum anim. Sunt commodo fugiat proident ex irure Lorem amet excepteur consequat consectetur. Est est officia est proident proident ut nulla sit Lorem id fugiat aliquip nulla laboris id voluptate officia. Amet do esse nostrud ad et aliqua elit mollit sunt fugiat sint ex sint consequat. Do aliqua veniam enim laborum cillum officia ex reprehenderit id duis.',
       careers: [ {
-        name: 'Ad adipisicing deserunt',
-        desc: 'Consequat nulla ut minim do aute dolor in eiusmod tempor in consectetur laboris eu. Est mollit eu id aute consectetur officia deserunt. Ipsum tempor qui ex laboris est non do esse est Lorem non quis ea voluptate. Reprehenderit aute cupidatat laborum eu eiusmod velit minim do. Dolor in consequat culpa occaecat ea commodo velit adipisicing deserunt laboris.',
-        image: 'course.png'
+        name: 'Security Researcher',
+        desc: 'One further step in the academic world will be to take on a PhD position, or similar researcher  jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
+        image: 'researcher.jpg'
       }, {
-        name: 'Deserunt',
-        desc: 'Consequat nulla ut minim do aute dolor in eiusmod tempor in consectetur laboris eu. Est mollit eu id aute consectetur officia deserunt. Ipsum tempor qui ex laboris est non do esse est Lorem non quis ea voluptate. Reprehenderit aute cupidatat laborum eu eiusmod velit minim do. Dolor in consequat culpa occaecat ea commodo velit adipisicing deserunt laboris.',
-        image: 'course.png'
+        name: 'Security Auditor',
+        desc: 'A security auditor’s job is to provide a detailed report of systems security for a company. These reports will be used to enhance the global security of the enterprise and to help the company make necessary changes to boost the integrity of their infrastructure. During the SRIC master, you will learn how to use auditing tools required to perform such an operation and what are the laws and procedures governing security, making you suitable for following such a career.',
+        image: 'auditor.jpg'
       }, {
-        name: 'Aipisicing',
-        desc: 'Consequat nulla ut minim do aute dolor in eiusmod tempor in consectetur laboris eu. Est mollit eu id aute consectetur officia deserunt. Ipsum tempor qui ex laboris est non do esse est Lorem non quis ea voluptate. Reprehenderit aute cupidatat laborum eu eiusmod velit minim do. Dolor in consequat culpa occaecat ea commodo velit adipisicing deserunt laboris.',
-        image: 'course.png'
+        name: 'Security Network Engineer',
+        desc: 'A security network engineer is vital to any large organisation and should provide security services for networks, data centers and endpoints by deploying, configuring and administration of many devices including firewalls, VPNs, IPS, and other more. We, at SRIC, provide the hands-on experience required for such a job, by partnering with top-vendors and bringing the latest technology into the class. You will learn how to protect your servers and network devices from the industry leaders.',
+        image: 'engineer.jpg'
       } ]
     },
     community: {
       activities: [
         {
           name: 'Security Summer School',
-          desc: 'Mollit laboris dolor eu et nostrud ipsum enim. Nostrud veniam sit aliqua reprehenderit id culpa occaecat duis ex id adipisicing sint laboris velit deserunt aute occaecat. Qui ipsum amet do esse ad nostrud nostrud ullamco duis aliqua qui. Occaecat ullamco aute pariatur consequat cillum Lorem duis sint dolore laboris consequat dolore laboris laborum cupidatat proident.',
+          desc: `Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place in June 2017!
+          In 2016, the third edition of the Security Summer School engaged students between June 20th and July 25th, at the Faculty of Automatic Control and Computers, UPB, focusing on Practical Software Exploitation. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor.
+          Activities took place during three intensive training sessions per week, as well as two Capture the Flag (CTF) contests which were held mid-term and at the end of the summer school.
+          The final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.`,
+          url: 'https://security.cs.pub.ro/summer-school/wiki/',
           image: 'sss.jpg'
         },
-        {
+      /*  {
           name: 'Capture The Flag',
           desc: `Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place in June 2017!
           In 2016, the third edition of the Security Summer School engaged students between June 20th and July 25th, at the Faculty of Automatic Control and Computers, UPB, focusing on Practical Software Exploitation. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor.
@@ -147,7 +150,7 @@ let data = {
           The final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.`,
           url: 'https://security.cs.pub.ro/summer-school/wiki/',
           image: 'ctf.jpg'
-        },
+        },*/
         {
           name: 'Hacker\'s Night Out',
           desc: `What’s the point of keeping the world cybersafe if we don’t get to tell all those fabulous stories?

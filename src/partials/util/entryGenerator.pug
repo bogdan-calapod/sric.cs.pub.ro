@@ -16,11 +16,14 @@ mixin entryGenerator(data, teachers)
         });
     - teacher = JSON.stringify(teacher)
 
+    // HACK
+    - let position = current.name == 'Research' ? 'SRIC Research Manager' : '';
+
     - let image = 'img/courses/' + current.image
 
     - if(current.active)
       .entry(data-name=current.name data-roname=current.roname data-desc=current.desc
-        data-image=image data-url=current.url data-teachers=teacher data-custombutton=current.customButton)
+        data-image=image data-url=current.url data-teachers=teacher data-custombutton=current.customButton data-position=position)
         p #{current.name}
 
     - else

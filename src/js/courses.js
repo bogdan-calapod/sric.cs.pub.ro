@@ -64,7 +64,7 @@ function selectCourse(e) {
   teachers.innerHTML = '';
   teacherData.map(
     data => teachers.appendChild(
-      generateTeacher(data)
+      generateTeacher(data, current.dataset.position)
     )
   );
 
@@ -75,10 +75,13 @@ function selectCourse(e) {
   current.className = 'entry active';
 }
 
-function generateTeacher(data) {
+function generateTeacher(data, pos) {
   let container = document.createElement('div'),
       photo = document.createElement('img'),
       name = document.createElement('h2');
+
+  if(pos)
+    name.dataset.position = pos;
 
   container.className = 'teacher';
   photo.src = 'img/people/' + data.photo;

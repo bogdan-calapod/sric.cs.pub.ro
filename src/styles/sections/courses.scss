@@ -30,6 +30,13 @@ section.courses {
       h2 {
         font-size: 16px;
         font-family: $regularFont;
+
+        &:after {
+          content: attr(data-position);
+          color: #999;
+          margin-left: 5px;
+          font-family: $lightFont;
+        }
       }
     }
   }

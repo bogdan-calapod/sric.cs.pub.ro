@@ -79,4 +79,10 @@ function send() {
   let formURL = document.querySelector('form').dataset.url;
   document.querySelector('form').action = formURL + reqData + 'submit=submit';
   document.querySelector('form').submit();
+
+  let title = document.querySelector('section.contact h2.error');
+  document.querySelector('section.contact form').style.maxHeight = '0';
+  title.className = 'thankyou';
+  title.innerHTML = 'Your message has been sent. Thank you!';
+  title.style.fontSize='20px';
 }

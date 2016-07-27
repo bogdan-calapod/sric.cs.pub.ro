@@ -30,6 +30,12 @@ section.contact {
     }
   }
 
+  form {
+    overflow: hidden;
+    max-height: 500px;
+    transition: 0.4s all;
+  }
+
   .contact {
     @include span-columns(6);
     @include shift(3);
@@ -89,7 +95,8 @@ section.contact {
     display: none;
   }
 
-  h2.error {
+  h2.error,
+  h2.thankyou {
     width: 100%;
     display: block;
     text-align: center;
@@ -102,6 +109,11 @@ section.contact {
     padding-left: 5px;
     text-align: left;
     border-left: 3px solid red;
+  }
+
+  h2.thankyou {
+    color: $blue;
+    border-left-color: $blue;
   }
 
   iframe {

@@ -5,6 +5,7 @@ include ./partials/sections/courses.pug
 include ./partials/sections/career.pug
 include ./partials/sections/community.pug
 include ./partials/sections/people.pug
+include ./partials/sections/contact.pug
 include ./partials/sections/footer.pug
 doctype html
 html
@@ -25,11 +26,14 @@ html
     +career(locals.data.copy.career)
     +community(locals.data.copy.community)
     +people(locals.data.people)
+    +contact
     +footer
 
+    script(src='js/vendor/fetch.js')
     script(src='js/vendor/smoothscroll.js')
     script(src='js/howtoapply.js')
     script(src='js/courses.js')
     script(src='js/community.js')
+    script(src='js/contact.js')
     script.
       smoothScroll.init();

@@ -5,15 +5,16 @@
  */
 let PROD = process.argv[2] == '--prod' ? true : false;
 
-let Generator = require('./Generator');
-let data = require('./data.js');
+let Generator = require(__dirname + '/Generator');
+let data = require(__dirname + '/data.js').getData(__dirname);
 
 let config = {
   siteData: data,
+  rootPath: __dirname,
   gzipAssets: PROD,
   sassOptions: {
-    file: './src/styles/index.scss',
-    out: './build/css/style.css',
+    file: '/src/styles/index.scss',
+    out: '/build/css/style.css',
     sourceMap: !PROD,
     includePaths: require('bourbon-neat').includePaths,
     outputStyle: PROD ? 'compressed' : 'nested'
@@ -22,7 +23,7 @@ let config = {
 
 let g = new Generator(config);
 
-g.renderPug(data)
+g.renderPug()
  .renderStyles()
  .processAssets();
 

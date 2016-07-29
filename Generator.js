@@ -28,8 +28,8 @@ class Generator {
 
     data = data ? data : this.config.siteData;
 
-    let html = pug.renderFile('./src/index.pug', data);
-    fs.writeFile('./build/index.html', html);
+    let html = pug.renderFile(this.config.rootPath + '/src/index.pug', data);
+    fs.writeFile(this.config.rootPath + '/build/index.html', html);
 
     return this;
   }
@@ -38,18 +38,22 @@ class Generator {
     console.log('[StatGen] Compiling SCSS files ');
 
     let options = this.config.sassOptions;
+    options.file = this.config.rootPath + options.file;
 
     sass.render(
       this.config.sassOptions,
       (err, res) => {
         if(err)
           throw new Error(err);
-        fs.writeFile(options.out, res.css);
+        fs.writeFile(this.config.rootPath + options.out, res.css);
       }
     );
 
     // Move fonts
-    ncp('./src/styles/font', './build/css/font');
+    ncp(
+      this.config.rootPath + '/src/styles/font',
+      this.config.rootPath + '/build/css/font'
+    );
 
     return this;
   }
@@ -69,14 +73,20 @@ class Generator {
   /// PRIVATE FUNCTIONS ///
   _copyStaticAssets() {
     // Move static assets
-    ncp('./src/img', './build/img');
+    ncp(
+      this.config.rootPath + '/src/img',
+      this.config.rootPath + '/build/img'
+    );
 
     return this;
   }
 
   _copyJavaScript() {
     // Get JS
-    ncp('./src/js', './build/js');
+    ncp(
+      this.config.rootPath + '/src/js',
+      this.config.rootPath + '/build/js'
+    );
 
     return this;
   }
@@ -84,11 +94,11 @@ class Generator {
   _gzipAssets() {
     // TODO: Dynamically get file list from tree
     let fileList = [
-      './build/index.html',
-      './build/css/style.css',
-      './build/js/community.js',
-      './build/js/courses.js',
-      './build/js/howtoapply.js',
+      this.config.rootPath + '/build/index.html',
+      this.config.rootPath + '/build/css/style.css',
+      this.config.rootPath + '/build/js/community.js',
+      this.config.rootPath + '/build/js/courses.js',
+      this.config.rootPath + '/build/js/howtoapply.js',
     ];
 
     fileList.map(

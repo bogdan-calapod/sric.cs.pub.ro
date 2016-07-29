@@ -127,6 +127,15 @@ function getData(dir) {
   // Get courses from provided file
   let courses = fs.readFileSync(dir + '/data.json', 'utf-8');
   data.courses = JSON.parse(courses)['Course info'];
+  data.courses = data.courses.map(
+    course => {
+      if(course.active == 'TRUE')
+        course.active = true;
+      else
+        course.active = false;
+      return course;
+    }
+  )
   return data;
 }
 

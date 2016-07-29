@@ -14,13 +14,13 @@ mixin header(courses)
 
       .scroller.right
         - for(let rep = 0; rep < 10; rep++)
-          - for(let i = 0; i < courses.filter(e => e.semester == '1').length; i++)
+          - for(let i = 0; i < courses.filter(e => e.semester == '2').length; i++)
             - let current = courses.filter(e => e.semester == '2')[i]
             span #{current.name}
 
       .scroller.right
         - for(let rep = 0; rep < 10; rep++)
-          - for(let i = 0; i < courses.filter(e => e.semester == 'e').length; i++)
+          - for(let i = 0; i < courses.filter(e => e.semester == '3').length; i++)
             - let current = courses.filter(e => e.semester == '3')[i]
             span #{current.name}
     a(href='#why' data-scroll)

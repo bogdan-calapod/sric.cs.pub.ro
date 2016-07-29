@@ -7,16 +7,16 @@ mixin courses(courses, teachers)
       .row
         .title
           p First semester
-        +entryGenerator(courses.sem1, teachers)
+        +entryGenerator(courses.filter(e => e.semester == '1'), teachers)
 
       .row
         .title
           p Second semester
-        +entryGenerator(courses.sem2, teachers)
+        +entryGenerator(courses.filter(e => e.semester == '2'), teachers)
       .row
         .title
           p Third semester
-        +entryGenerator(courses.sem3, teachers)
+        +entryGenerator(courses.filter(e => e.semester == '3'), teachers)
       .row
         .title
           p Fourth semester

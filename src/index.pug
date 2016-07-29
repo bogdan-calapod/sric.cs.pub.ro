@@ -18,13 +18,14 @@ html
     link(rel="shortcut icon" href="img/favicon.ico")
     meta(charset="utf-8")
   body
-    +header(locals.data.courses)
-    +why(locals.data.copy.why)
+
+    +header(locals.courses)
+    +why(locals.copy.why)
     +howtoapply
-    +courses(locals.data.courses, locals.data.people)
-    +career(locals.data.copy.career)
-    +community(locals.data.copy.community)
-    +people(locals.data.people)
+    +courses(locals.courses, locals.people)
+    +career(locals.copy.career)
+    +community(locals.copy.community)
+    +people(locals.people)
     +contact
     +footer
 

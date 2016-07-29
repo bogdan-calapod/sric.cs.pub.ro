@@ -11,6 +11,7 @@ let data = require(__dirname + '/data.js').getData(__dirname);
 let config = {
   siteData: data,
   rootPath: __dirname,
+  destination: 'C:/Users/bogda/Desktop/sric',
   gzipAssets: PROD,
   sassOptions: {
     file: '/src/styles/index.scss',
@@ -25,6 +26,7 @@ let g = new Generator(config);
 
 g.renderPug()
  .renderStyles()
- .processAssets();
+ .processAssets()
+ .copyWebsite();
 
 

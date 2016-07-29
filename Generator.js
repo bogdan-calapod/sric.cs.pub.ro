@@ -7,7 +7,7 @@
 // Imports
 let pug = require('pug');
 let sass = require('node-sass');
-let fs = require('fs');
+let fs = require('fs-extra');
 let ncp = require('ncp').ncp;
 let zip = require('node-targz');
 
@@ -66,6 +66,15 @@ class Generator {
 
     if(this.config.gzipAssets == true)
       this._gzipAssets();
+
+    return this;
+  }
+
+  copyWebsite() {
+    console.log('[StatGen] Moving website');
+    ncp.limit = 0;
+
+    fs.copy(this.config.rootPath + '/build', this.config.destination);
 
     return this;
   }

@@ -28,9 +28,13 @@
     button {
       width: 100%;
       height: 60px;
-      
+
       position: relative;
       text-align: left;
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        font-size: 12px;
+      }
 
       &:after {
         width: 35px;
@@ -40,6 +44,10 @@
         position: absolute;
         right: 5px;
         top: 0px;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+          background-image: none;
+        }
       }
     }
   }

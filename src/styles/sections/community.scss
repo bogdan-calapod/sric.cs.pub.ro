@@ -7,6 +7,11 @@ section.community {
   .content {
     @include span-columns(10);
     @include shift(2);
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      @include span-columns(12);
+      @include shift(0);
+    }
   }
 
   .content {
@@ -16,10 +21,19 @@ section.community {
 
     img {
       @include span-columns(4);
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        @include span-columns(12);
+      }
     }
 
     .text {
       @include span-columns(6);
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        @include span-columns(10);
+        @include shift(1);
+      }
 
       h2 {
         margin-top: 0;
@@ -31,6 +45,10 @@ section.community {
     width: calc(100% / 4);
     border-top: 1px solid rgba(0,0,0,0.1);
     border-bottom: 1px solid rgba(0,0,0,0.1);
+    @media screen and (max-width: $mobileBreakpoint) {
+      width: 50%;
+      height: 30px;
+    }
   }
 
 }

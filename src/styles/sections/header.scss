@@ -12,6 +12,7 @@ header {
   .logos {
     padding: 10px;
 
+
     img {
       height: 40px;
     }
@@ -29,6 +30,11 @@ header {
     animation-duration: 500s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      height: 65%;
+      opacity: 0.5;
+    }
   }
 
   .sric {
@@ -43,6 +49,10 @@ header {
 
     animation-name: sric;
     animation-duration: 1s;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      height: 25vh;
+    }
   }
 
   .scrollers {
@@ -71,11 +81,23 @@ header {
         float: none;
         animation: scrollRight 200s linear infinite;
 
+        @media screen and (max-width: $mobileBreakpoint) {
+          animation-duration: 500s;
+        }
+
         &:nth-child(1) {
           animation-duration: 100s;
+
+          @media screen and (max-width: $mobileBreakpoint) {
+            animation-duration: 500s;
+          }
         }
         &:nth-child(2) {
           animation-duration: 150s;
+
+          @media screen and (max-width: $mobileBreakpoint) {
+            animation-duration: 500s;
+          }
         }
       }
     }
@@ -96,6 +118,10 @@ header {
 
     &:hover {
       transform: translateY(5px);
+    }
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      height: 50px;
     }
   }
 }

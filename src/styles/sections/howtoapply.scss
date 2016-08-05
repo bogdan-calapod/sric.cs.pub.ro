@@ -13,6 +13,10 @@ section.howtoapply {
 
   &.active {
     max-height: 2500px;
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      max-height: 3000px;
+    }
   }
 
   .step {
@@ -23,6 +27,12 @@ section.howtoapply {
       @include span-columns(6);
       @include shift(3);
     }
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
 
     border-right: 1px solid $blue;
     border-bottom: 1px solid $blue;
@@ -55,6 +65,10 @@ section.howtoapply {
       text-align: right;
       text-transform: none;
       white-space: nowrap;
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        font-size: 24px;
+      }
 
       &:after {
         content: '';

@@ -2,6 +2,10 @@ section.contact {
   .socialElements {
     @include span-columns(8);
     @include shift(2);
+    @media screen and (max-width: $mobileBreakpoint) {
+      @include span-columns(12);
+      @include shift(0);
+    }
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -13,6 +17,12 @@ section.contact {
 
     .element {
       @include span-columns(3);
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        @include span-columns(4);
+        font-size: 14px;
+      }
+
       display: inline-block;
       position: relative;
 
@@ -22,6 +32,10 @@ section.contact {
         height: 100px;
         display: block;
         margin: 10px auto;
+
+        @media screen and (max-width: $mobileBreakpoint) {
+          height: 50px;
+        }
       }
 
       &:hover {
@@ -39,6 +53,11 @@ section.contact {
   .contact {
     @include span-columns(6);
     @include shift(3);
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      @include span-columns(10);
+      @include shift(1);
+    }
 
     margin-top: 30px;
 

@@ -3,6 +3,11 @@ section.career {
   .row {
     @include span-columns(8);
     @include shift(2);
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      @include span-columns(12);
+      @include shift(0);
+    }
   }
 
   .row {
@@ -16,6 +21,11 @@ section.career {
 
     img {
       margin: 10px;
+
+      @media screen and (max-width: $mobileBreakpoint) {
+        width: 150px;
+        height: 150px;
+      }
     }
 
     &:nth-child(even) {

@@ -6,5 +6,14 @@
       right: -250px;
       background-image: url(../img/assets/researchDiamond.svg);
     }
+
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      left: -25px;
+
+      &:after {
+        right: -200px;
+      }
+    }
   }
 }

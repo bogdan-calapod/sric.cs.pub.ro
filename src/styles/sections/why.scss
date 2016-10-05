@@ -8,9 +8,18 @@ section.why {
       display: block;
       margin: 0 auto;
     }
+
+
+    @media screen and (max-width: $mobileBreakpoint) {
+        @include span-columns(10);
+    }
   }
 
   img {
     @include span-columns(2);
+
+    @media screen and (max-width: $mobileBreakpoint) {
+      display: none;
+    }
   }
 }

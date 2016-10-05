@@ -7,6 +7,9 @@ $blue: #063551;
 $orange: #E08003;
 $yellow: #FBB03B;
 
+//Breakpoint
+$mobileBreakpoint: 1024px;
+
 // Website imports
 @import 'selector';
 @import 'font/fonts';
@@ -98,4 +101,10 @@ button {
   &.download:after {
     background-image: url(../img/assets/buttonDownload.svg);
   }
+}
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
 }

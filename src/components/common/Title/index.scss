@@ -1,0 +1,38 @@
+.Title {
+  display: flex;
+
+  h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--secondary);
+  }
+
+  &.light {
+    h1 {
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: none;
+    }
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+  }
+
+  &.hasSubtitle {
+    flex-direction: column;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 800;
+      text-transform: none;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+  }
+}

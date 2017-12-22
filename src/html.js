@@ -29,7 +29,7 @@ module.exports = class HTML extends React.Component {
             name='viewport'
             content='width=device-width, initial-scale=1, shrink-to-fit=no'
           />
-          <title>GDPRShield | Complete solutions for GDPR Compliance</title>
+          <title>SRIC | Security Master</title>
           {this.props.headComponents}
           {css}
         </head>

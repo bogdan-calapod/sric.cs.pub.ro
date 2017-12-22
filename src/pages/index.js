@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Header from 'components/Header'
+
 import '../index.scss'
 
 class Home extends Component {
@@ -10,7 +12,7 @@ class Home extends Component {
   render () {
     return (
       <div>
-        Hello
+        <Header />
       </div>
     )
   }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import Header from 'components/Header'
 import WhySric from 'components/WhySric'
+import CareerPerspectives from 'components/CareerPerspectives'
 
 import Button from 'components/common/Button'
 
@@ -17,6 +18,7 @@ class Home extends Component {
       <div>
         <Header />
         <WhySric />
+        <CareerPerspectives />
       </div>
     )
   }

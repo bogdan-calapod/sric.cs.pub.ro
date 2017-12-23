@@ -46,8 +46,8 @@ class TextRow extends Component {
     return (
       <div className={this.className}>
         <div className='text'>
-          <Markdown source={text} />
           {children}
+          <Markdown source={text} />
         </div>
         {this.image}
       </div>

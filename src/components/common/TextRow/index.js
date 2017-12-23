@@ -1,16 +1,20 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import Markdown from 'react-markdown'
+
 import './index.scss'
 
 class TextRow extends Component {
   static propTypes = {
     children: PropTypes.any,
+    text: PropTypes.string,
     image: PropTypes.string,
     right: PropTypes.bool
   }
   static defaultProps = {
     children: '',
+    text: '',
     image: '',
     right: false
   }
@@ -37,11 +41,14 @@ class TextRow extends Component {
   }
 
   render () {
-    const { children } = this.props
+    const { children, text } = this.props
 
     return (
       <div className={this.className}>
-        {children}
+        <div className='text'>
+          <Markdown source={text} />
+          {children}
+        </div>
         {this.image}
       </div>
     )

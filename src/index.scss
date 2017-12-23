@@ -92,6 +92,7 @@ button {
   font: inherit;
   vertical-align: baseline;
   font-family: 'Raleway';
+  outline: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -144,4 +145,17 @@ a:visited {
 * {
   --primary: #E08003;
   --secondary: #063551;
+}
+
+/* Elements */
+p {
+  margin: 15px 0;
+  line-height: 1.2;
+}
+
+section {
+  margin: 0 auto;
+  padding: 15px;
+  box-sizing: border-box;
+  max-width: 1200px;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import Header from 'components/Header'
+import WhySric from 'components/WhySric'
 
 import Button from 'components/common/Button'
 
@@ -15,6 +16,7 @@ class Home extends Component {
     return (
       <div>
         <Header />
+        <WhySric />
       </div>
     )
   }

@@ -5,6 +5,8 @@ import Header from 'components/Header'
 import WhySric from 'components/WhySric'
 import CareerPerspectives from 'components/CareerPerspectives'
 
+import TabDisplay from 'components/common/TabDisplay'
+
 import Button from 'components/common/Button'
 
 import '../index.scss'
@@ -19,6 +21,7 @@ class Home extends Component {
         <Header />
         <WhySric />
         <CareerPerspectives />
+        <TabDisplay tabs={['Security Summer School', 'Hackers Night Out']} />
       </div>
     )
   }

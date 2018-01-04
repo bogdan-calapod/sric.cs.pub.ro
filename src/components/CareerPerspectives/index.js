@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import Title from 'components/Common/Title'
-import TextRow from 'components/Common/TextRow'
+import Title from 'components/common/Title'
+import TextRow from 'components/common/TextRow'
 
 class CareerPerspectives extends Component {
   static propTypes = {

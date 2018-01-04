@@ -25,6 +25,11 @@ class CareerPerspectives extends Component {
         title: 'Security Researcher',
         text: 'One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
         image: 'http://localhost:8000/static/why.ca554d96.png'
+      },
+      {
+        title: 'Security Researcher',
+        text: 'One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
+        image: 'http://localhost:8000/static/why.ca554d96.png'
       }
     ]
   }

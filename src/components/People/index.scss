@@ -1,0 +1,12 @@
+.People {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .Person {
+      margin: 30px 50px;
+    }
+  }
+}

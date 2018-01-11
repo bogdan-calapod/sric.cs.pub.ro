@@ -5,9 +5,9 @@ import Header from 'components/Header'
 import WhySric from 'components/WhySric'
 import CareerPerspectives from 'components/CareerPerspectives'
 import Community from 'components/Community'
+import People from 'components/People'
 
 import Button from 'components/common/Button'
-import Person from 'components/common/Person'
 
 import '../index.scss'
 
@@ -44,9 +44,8 @@ class Home extends Component {
         <Header />
         <WhySric />
         <CareerPerspectives />
-        <Person {...person} />
-        <Person {...person} small />
         <Community events={events} />
+        <People />
       </div>
     )
   }

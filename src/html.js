@@ -42,7 +42,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.postBodyComponents}
         </body>
-        <script src={__PATH_PREFIX__ + 'driftSetup.js'} />
       </html>
     )
   }

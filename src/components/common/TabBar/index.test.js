@@ -1,14 +1,14 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import TabDisplay from './'
+import TabBar from './'
 
-describe('TabDisplay', () => {
+describe('TabBar', () => {
   it('renders without exploding', () => {
-    shallow(<TabDisplay />)
+    shallow(<TabBar />)
   })
 
   it('renders passed in tabs', () => {
-    const wrapper = shallow(<TabDisplay tabs={['a', 'b']} />)
+    const wrapper = shallow(<TabBar tabs={['a', 'b']} />)
 
     expect(wrapper.text()).toContain('a')
     expect(wrapper.text()).toContain('b')
@@ -19,7 +19,7 @@ describe('TabDisplay', () => {
       active: 'a',
       tabs: ['a', 'b']
     }
-    const wrapper = shallow(<TabDisplay {...props} />)
+    const wrapper = shallow(<TabBar {...props} />)
     const { className } = wrapper.find('.tab').first().props()
     expect(className).toContain('active')
   })
@@ -29,7 +29,7 @@ describe('TabDisplay', () => {
       tabs: ['a'],
       onChange: jest.fn()
     }
-    const wrapper = shallow(<TabDisplay {...props} />)
+    const wrapper = shallow(<TabBar {...props} />)
     const tab = wrapper.find('.tab')
     tab.simulate('click', { target: { textContent: props.tabs[0] } })
 

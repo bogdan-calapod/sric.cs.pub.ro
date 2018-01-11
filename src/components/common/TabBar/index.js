@@ -6,7 +6,7 @@ import './index.scss'
 /**
  * Tab selector display
  */
-class TabDisplay extends Component {
+class TabBar extends Component {
   static propTypes = {
     onChange: PropTypes.func,
     tabs: PropTypes.arrayOf(PropTypes.string),
@@ -42,11 +42,11 @@ class TabDisplay extends Component {
 
   render () {
     return (
-      <div className='TabDisplay'>
+      <div className='TabBar'>
         {this.tabs}
       </div>
     )
   }
 }
 
-export default TabDisplay
+export default TabBar

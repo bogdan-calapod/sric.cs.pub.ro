@@ -1,0 +1,22 @@
+.Community {
+  .content {
+    display: flex;
+    align-items: center;
+
+    img {
+      object-fit: contain;
+      margin-right: 10px;
+      width: 30%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    p,
+    .Button {
+      margin: 15px 0;
+    }
+  }
+}

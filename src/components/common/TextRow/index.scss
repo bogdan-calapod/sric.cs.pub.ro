@@ -7,9 +7,10 @@
   }
 
   img {
+    display: block;
     width: 200px;
     height: 200px;
-    display: block;
+    margin: 5px;
   }
 
   @media screen and (max-width: 800px) {

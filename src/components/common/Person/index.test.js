@@ -7,12 +7,6 @@ describe('Person', () => {
     shallow(<Person />)
   })
 
-  it('displays default image if none passed', () => {
-    const wrapper = shallow(<Person />)
-    const image = wrapper.find('img').props().src
-    expect(image).toContain('default')
-  })
-
   it('displays passed in text', () => {
     const props = {
       name: 'Test',

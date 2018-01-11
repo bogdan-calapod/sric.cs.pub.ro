@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import defaultImage from './default.png'
 import './index.scss'
 
 class Person extends Component {
@@ -19,6 +20,11 @@ class Person extends Component {
 
   get image () {
     const { image } = this.props
+
+    if (image === '') {
+      return defaultImage
+    }
+
     return image
   }
 

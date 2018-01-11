@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import LazyLoad from 'react-lazyload'
+
 import defaultImage from './default.png'
 import './index.scss'
 
@@ -30,9 +32,11 @@ class Person extends Component {
 
   get photo () {
     return (
-      <div class='image'>
-        <div class='wrap'>
-          <img src={this.image} />
+      <div className='image'>
+        <div className='wrap'>
+          <LazyLoad height={100}>
+            <img src={this.image} />
+          </LazyLoad>
         </div>
       </div>
     )

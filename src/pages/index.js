@@ -7,6 +7,7 @@ import CareerPerspectives from 'components/CareerPerspectives'
 import Community from 'components/Community'
 
 import Button from 'components/common/Button'
+import Person from 'components/common/Person'
 
 import '../index.scss'
 
@@ -27,6 +28,12 @@ const events = [
   }
 ]
 
+const person = {
+  name: 'Ion Popescu',
+  position: 'Teaching Assistant',
+  image: 'https://img.buzzfeed.com/buzzfeed-static/static/2014-04/tmp/webdr02/2/17/0e7cd6da3ce720d983515a9ab831a530-3.jpg?downsize=715:*&output-format=auto&output-quality=auto'
+}
+
 class Home extends Component {
   static propTypes = {}
   static defaultProps = {}
@@ -37,6 +44,8 @@ class Home extends Component {
         <Header />
         <WhySric />
         <CareerPerspectives />
+        <Person {...person} />
+        <Person {...person} small />
         <Community events={events} />
       </div>
     )

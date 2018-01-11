@@ -1,0 +1,85 @@
+$normalSize: 135px;
+$smallSize: 65px;
+
+@mixin getWrapSize ($imageSize) {
+  $wrapSize: calc(#{$imageSize} + 55px);
+  width: $wrapSize;
+  height: $wrapSize;
+}
+
+@mixin getTranslate ($imageSize) {
+  transform: rotate(-45deg) translateY(calc((#{$imageSize} / 3) * -1));
+}
+
+.Person {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  &.small {
+    flex-direction: row;
+
+    .name {
+      margin-left: 5px;
+      margin-top: 10px;
+    }
+
+    .image {
+      margin: 0;
+      transform: rotate(45deg) translateY(10px) scale(0.5);
+    }
+
+    .image,
+    .image div {
+      width: $smallSize;
+      height: $smallSize;
+    }
+
+    .image .wrap {
+      @include getWrapSize($smallSize);
+      @include getTranslate($smallSize);
+    }
+  }
+
+  h1,
+  h3 {
+    font-weight: 600;
+    color: var(--secondary);
+  }
+
+  h1 {
+    font-size: 21px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-weight: 400;
+  }
+
+  .image,
+  .image div {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: $normalSize;
+    height: $normalSize;
+  }
+
+  .image {
+    margin-bottom: 50px;
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .image .wrap {
+    @include getWrapSize($normalSize);
+    @include getTranslate($normalSize);
+  }
+
+  .image .wrap img {
+    width: 100%;
+    height: auto;
+  }
+}

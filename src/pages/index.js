@@ -6,6 +6,7 @@ import WhySric from 'components/WhySric'
 import CareerPerspectives from 'components/CareerPerspectives'
 import Community from 'components/Community'
 import People from 'components/People'
+import Contact from 'components/Contact'
 
 import Button from 'components/common/Button'
 
@@ -46,6 +47,7 @@ class Home extends Component {
         <CareerPerspectives />
         <Community events={events} />
         <People />
+        <Contact />
       </div>
     )
   }

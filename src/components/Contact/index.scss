@@ -1,0 +1,60 @@
+.Contact {
+  header,
+  form,
+  .info {
+    display: flex;
+    align-items: center;
+  }
+
+  header {
+    justify-content: space-around;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .info {
+    flex-direction: column;
+    max-width: 220px;
+    text-align: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+  }
+
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+
+    .TextInput {
+      max-width: none;
+      margin: 20px;
+      width: calc(50% - 40px);
+    }
+
+    .TextInput:nth-child(3) {
+      width: 100%;
+    }
+
+    .Button {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+
+  .content {}
+
+  iframe {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+  }
+}

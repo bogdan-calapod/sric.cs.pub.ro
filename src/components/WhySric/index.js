@@ -2,14 +2,27 @@ import React, { Component } from 'react'
 
 import Title from 'components/common/Title'
 import TextRow from 'components/common/TextRow'
-// import Button from 'components/common/Button'
+import Button from 'components/common/Button'
+
+import HowToApply from 'components/HowToApply'
+
+import Modal from 'rodal'
 
 import image from './assets/why.png'
 
+import 'rodal/lib/rodal.css'
 import './index.scss'
 
 class WhySric extends Component {
+  state = {
+    modalOpen: false
+  }
+
+  toggleModal = () =>
+    this.setState({ ...this.state, modalOpen: !this.state.modalOpen })
+
   render () {
+    const { modalOpen } = this.state
     return (
       <section className='WhySric'>
         <Title> Why Sric ? </Title>
@@ -24,7 +37,19 @@ class WhySric extends Component {
             If you enjoy making computing systems work, hardening and securing system components and continuously improving IT infrastructures, you are the ideal candidate for the SRIC masters program.
           </p>
         </TextRow>
-        {/* <Button image='arrow'>How to apply ? </Button> */}
+        <Button image='arrow' onClick={this.toggleModal}>
+          How to apply ?{' '}
+        </Button>
+
+        <Modal
+          width={1200}
+          height={800}
+          visible={modalOpen}
+          onClose={this.toggleModal}
+          className='HowToApplyModal'
+        >
+          <HowToApply />
+        </Modal>
       </section>
     )
   }

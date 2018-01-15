@@ -1,0 +1,12 @@
+.step ul {
+  @import './listIcons.scss';
+
+  display: block;
+
+  list-style-type: none;
+  margin: 30px 0;
+  width: 100%;
+
+  @import './listLeftAligned.scss';
+  @import './listRightAligned.scss';
+}

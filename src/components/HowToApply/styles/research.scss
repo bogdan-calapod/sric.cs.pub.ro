@@ -1,0 +1,19 @@
+.step.research {
+  >h1 {
+    left: -75px;
+
+    &:after {
+      right: -250px;
+      background-image: url(./assets/researchDiamond.svg);
+    }
+
+
+    @media screen and (max-width: 800px) {
+      left: -25px;
+
+      &:after {
+        right: -200px;
+      }
+    }
+  }
+}

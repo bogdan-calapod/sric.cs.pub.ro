@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import Title from 'components/common/Title'
 import TextRow from 'components/common/TextRow'
-import Button from 'components/common/Button'
+// import Button from 'components/common/Button'
 
 import image from './assets/why.png'
 
@@ -24,7 +24,7 @@ class WhySric extends Component {
             If you enjoy making computing systems work, hardening and securing system components and continuously improving IT infrastructures, you are the ideal candidate for the SRIC masters program.
           </p>
         </TextRow>
-        <Button image='arrow'>How to apply ? </Button>
+        {/* <Button image='arrow'>How to apply ? </Button> */}
       </section>
     )
   }

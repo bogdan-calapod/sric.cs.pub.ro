@@ -2,7 +2,9 @@ import React from 'react'
 import { shallow } from 'enzyme'
 import Community from './'
 
+import Button from 'components/common/Button'
 import TabBar from 'components/common/TabBar'
+import Markdown from 'react-markdown'
 
 describe('Community', () => {
   it('renders without exploding', () => {
@@ -10,7 +12,16 @@ describe('Community', () => {
   })
 
   it('renders a TabBar', () => {
-    const wrapper = shallow(<Community />)
+    const props = {
+      events: [
+        {
+          title: 'Test',
+          text: 'Test',
+          image: 'Test'
+        }
+      ]
+    }
+    const wrapper = shallow(<Community {...props} />)
     expect(wrapper.find(TabBar)).toHaveLength(1)
   })
 
@@ -26,22 +37,10 @@ describe('Community', () => {
     }
     const wrapper = shallow(<Community {...props} />)
 
-    expect(wrapper.text()).toContain('Security Summer School')
-    expect(wrapper.text()).toContain('text')
-    expect(wrapper.find('img').props().src).toBe('nightout')
-  })
-
-  it('sets default image if none passed', () => {
-    const props = {
-      events: [
-        {
-          title: '',
-          text: ''
-        }
-      ]
-    }
-    const wrapper = shallow(<Community {...props} />)
-    expect(wrapper.find('img').props().src).toContain('default')
+    expect(wrapper.find(TabBar).props().tabs).toContain(
+      'Security Summer School'
+    )
+    expect(wrapper.find(Markdown).props().source).toContain('test')
   })
 
   it('displays link with passed in url', () => {
@@ -55,6 +54,6 @@ describe('Community', () => {
     }
     const wrapper = shallow(<Community {...props} />)
     expect(wrapper.find('a').props().href).toBe('http://x.com')
-    expect(wrapper.find(Button).text()).toContain('More info')
+    expect(wrapper.find(Button).props().children).toContain('More info')
   })
 })

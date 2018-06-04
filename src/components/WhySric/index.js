@@ -38,7 +38,7 @@ class WhySric extends Component {
           </p>
         </TextRow>
         <Button image='arrow' onClick={this.toggleModal}>
-          How to apply ?{' '}
+          How to apply ?
         </Button>
 
         <Modal

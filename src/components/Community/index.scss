@@ -6,7 +6,8 @@
     img {
       object-fit: contain;
       margin-right: 10px;
-      width: 30%;
+      width: 300px;
+      flex-shrink: 0;
     }
 
     .text {

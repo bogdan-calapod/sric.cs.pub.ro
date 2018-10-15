@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import Title from 'components/common/Title'
-import TextRow from 'components/common/TextRow'
+import Title from "../common/Title";
+import TextRow from "../common/TextRow";
 
 class CareerPerspectives extends Component {
   static propTypes = {
@@ -10,48 +10,53 @@ class CareerPerspectives extends Component {
       PropTypes.shape({
         title: PropTypes.string,
         text: PropTypes.string,
-        image: ''
+        image: ""
       })
     )
-  }
+  };
   static defaultProps = {
     texts: [
       {
-        title: 'Security Researcher',
-        text: 'One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
-        image: 'http://localhost:8000/static/why.ca554d96.png'
+        title: "Security Researcher",
+        text:
+          "One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.",
+        image: "http://picsum.photos/600?random"
       },
       {
-        title: 'Security Researcher',
-        text: 'One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
-        image: 'http://localhost:8000/static/why.ca554d96.png'
+        title: "Security Researcher",
+        text:
+          "One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.",
+        image: "http://picsum.photos/600?random"
       },
       {
-        title: 'Security Researcher',
-        text: 'One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.',
-        image: 'http://localhost:8000/static/why.ca554d96.png'
+        title: "Security Researcher",
+        text:
+          "One further step in the academic world will be to take on a PhD position, or similar researcher jobs can also be found in the industry. SRIC prepares future researchers by teaching a diverse number of programming languages, advanced topics on operating systems, cryptography, network security and others. Moreover, we also provide the background for solid forensics and reverse engineering, promoting desire for edge technology.",
+        image: "http://picsum.photos/600?random"
       }
     ]
-  }
+  };
 
-  get texts () {
-    const { texts } = this.props
+  get texts() {
+    const { texts } = this.props;
 
     return texts.map((x, i) => (
       <TextRow key={i} image={x.image} text={x.text} right={i % 2 !== 0}>
-        <Title right={i % 2 !== 0} light>{x.title}</Title>
+        <Title right={i % 2 !== 0} light>
+          {x.title}
+        </Title>
       </TextRow>
-    ))
+    ));
   }
 
-  render () {
+  render() {
     return (
-      <section className='CareerPerspectives'>
+      <section className="CareerPerspectives">
         <Title> Career Perspectives </Title>
         {this.texts}
       </section>
-    )
+    );
   }
 }
 
-export default CareerPerspectives
+export default CareerPerspectives;

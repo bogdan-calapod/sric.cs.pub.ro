@@ -5,15 +5,16 @@
   "version": "1.0.0",
   "author": "Bogdan Marius Calapod <bogdan.calapod@tech-lounge.ro>",
   "dependencies": {
-    "gatsby": "^1.9.145",
-    "gatsby-link": "^1.6.44",
-    "gatsby-plugin-google-analytics": "^1.0.31",
+    "gatsby": "^2.0.22",
+    "gatsby-link": "^2.0.4",
+    "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-hotjar": "^1.0.1",
+    "gatsby-plugin-netlify": "^2.0.1",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-plugin-sass": "^2.0.1",
     "react-helmet": "^5.2.0",
     "react-lazyload": "^2.3.0",
-    "react-markdown": "^3.3.2",
+    "react-markdown": "^4.0.3",
     "rodal": "^1.6.3"
   },
   "scripts": {
@@ -73,8 +74,8 @@
     "jest": "^23.0.0",
     "prettier": "^1.12.1",
     "prop-types": "^15.6.1",
-    "react": "16.4.0",
-    "react-dom": "16.4.0",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
     "react-test-renderer": "^16.4.0"
   }
 }

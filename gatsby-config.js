@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `GDPR Landing Page`
+    title: `SRIC Master Website`
   },
-  pathPrefix: '/',
+  pathPrefix: "/",
   plugins: [
+    "gatsby-plugin-typescript",
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: ''
+        trackingId: ""
       }
     },
     {
@@ -20,4 +21,4 @@ module.exports = {
       }
     }
   ]
-}
+};

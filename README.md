@@ -8,9 +8,9 @@ SRIC website template for Gatsby, with Jest, Sass, Google Analytics & Hotjar
 baked in.
 
 Also includes:
-* .eslint.rc config using standard.js
-* Mock for Jest styles (so that styles imports don't break your tests)
-* Example wercker config with test, build, deploy (using SCP) and Slack notification configs
+
+- .eslint.rc config using standard.js
+- Mock for Jest styles (so that styles imports don't break your tests)
 
 ## Configuring Analytics and Hotjar
 
@@ -18,21 +18,19 @@ To configure Google Analytics and Hotjar, insert your Google Analytics Tracking 
 
 ## Writing tests
 
-The Jest runner is configured to look for all files named `*.test.js` and run all the tests in them. I recommend placing the test file in the same folder with the component it's testing.
+The Jest runner is configured to look for all files named `*.test.js` and run all the tests in them. It is recommended to place the test files in the same folder with the component it is testing.
 
-To run tests use `yarn test`, and `yarn test-coverage` if you want a coverage report as well.
+To run tests use `npm run test`, and `npm run test-coverage` if you want a coverage report as well.
 
 ## API Config
 
 The data for the website should be available on a Harmonia server with the correct endpoints. Look into the endpoints repo for more info.
 
-
 ## Installing
-* `yarn` && `yarn develop` to develop
-* `yarn test` to run tests
+
+- `npm install` && `npm run develop` to develop
+- `npm run test` to run tests
 
 ## Deploying
-* `yarn build` and deploy contents of `public` folder
 
-
-## Contibutions are welcome! 😊
+- `npm run build` and deploy contents of `public` folder

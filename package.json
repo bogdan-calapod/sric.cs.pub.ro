@@ -1,9 +1,9 @@
 {
-  "name": "gdpr-landing-page",
-  "description": "GDPR Landing Page",
+  "name": "sric-website",
+  "description": "SRIC Master Research Website",
   "license": "UNLICENSED",
   "version": "1.0.0",
-  "author": "Bogdan Marius Calapod <bogdan.calapod@codaintelligence.com>",
+  "author": "Bogdan Marius Calapod <bogdan.calapod@tech-lounge.ro>",
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.44",
@@ -16,11 +16,6 @@
     "react-markdown": "^3.3.2",
     "rodal": "^1.6.3"
   },
-  "keywords": [
-    "gatsby",
-    "gdpr",
-    "landingpage"
-  ],
   "scripts": {
     "start": "gatsby develop --open",
     "build": "gatsby build",

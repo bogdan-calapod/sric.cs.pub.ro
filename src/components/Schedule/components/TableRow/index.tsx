@@ -46,13 +46,21 @@ class TableRow extends Component<IProps> {
     return options.map(this.getCell);
   }
 
-  public render() {
+  get title() {
     const { title } = this.props;
 
+    if (title.includes(":")) {
+      return title.split(":")[0].trim();
+    } else {
+      return title;
+    }
+  }
+
+  public render() {
     return (
       <div className="TableRow">
         <div className="cell disabled">
-          <span>{title}</span>
+          <span>{this.title}</span>
         </div>
         {this.cells}
       </div>

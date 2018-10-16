@@ -16,7 +16,11 @@ interface IProps {
 class CourseDetails extends Component<IProps> {
   public static defaultProps: Partial<IProps> = {};
 
-  openUrl = () => window.open(this.props.course.url, "_newtab");
+  openUrl = () => {
+    if (window !== undefined) {
+      window.open(this.props.course.url, "_newtab");
+    }
+  };
 
   get teachers() {
     const { course } = this.props;

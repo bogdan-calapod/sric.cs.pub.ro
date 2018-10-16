@@ -30,12 +30,69 @@ const events = [
   }
 ];
 
-const person = {
-  name: "Ion Popescu",
-  position: "Teaching Assistant",
-  image:
-    "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/tmp/webdr02/2/17/0e7cd6da3ce720d983515a9ab831a530-3.jpg?downsize=715:*&output-format=auto&output-quality=auto"
-};
+const people = [
+  {
+    name: "Ion Bică",
+    position: "Professor",
+    image: "/photos/ionbica.png"
+  },
+  {
+    name: "Marius Bunget",
+    position: "Assistant Professor",
+    image: "/photos/mariusbunget.png"
+  },
+  {
+    name: "Mihai Carabaș",
+    position: "Assistant Professor",
+    image: "/photos/mihaicarabas.png"
+  },
+  {
+    name: "Alex Carp",
+    position: "Assistant Professor",
+    image: "/photos/alexcarp"
+  },
+  {
+    name: "Mihai Chiroiu",
+    position: "Assistant Professor",
+    image: "/photos/mihaichiroiu.png"
+  },
+
+  {
+    name: "Răzvan Deaconescu",
+    position: "Assistant Professor",
+    image: "/photos/razvandeaconescu.png"
+  },
+  {
+    name: "Adrian Furtună",
+    position: "Assistant Professor",
+    image: "/photos/adrianfurtuna.jpg"
+  },
+  {
+    name: "Laura Gheorghe",
+    position: "Assistant Professor",
+    image: "/photos/lauragheorghe.png"
+  },
+  {
+    name: "Dragoș Niculescu",
+    position: "Professor",
+    image: "/photos/dragosniculescu.png"
+  },
+  {
+    name: "Radu Petean",
+    position: "Assistant Professor",
+    image: "/photos/radupetean.png"
+  },
+  {
+    name: "Răzvan Rughiniș",
+    position: "Professor",
+    image: "/photos/razvanrughinis.jpg"
+  },
+  {
+    name: "Nicolae Țăpuș",
+    position: "Professor",
+    image: "/photos/nicolaetapus.jpg"
+  }
+];
 
 interface RawCourse {
   semester: "1" | "2" | "3" | "4";
@@ -90,11 +147,11 @@ class Home extends Component<IProps> {
     return (
       <Fragment>
         <Header />
-        <Schedule courses={this.courses} />
         <WhySric />
+        <Schedule courses={this.courses} />
         <CareerPerspectives />
         <Community events={events} />
-        <People />
+        <People people={people} />
         <Contact />
       </Fragment>
     );

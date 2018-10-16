@@ -1,13 +1,13 @@
 $normalSize: 135px;
 $smallSize: 65px;
 
-@mixin getWrapSize ($imageSize) {
+@mixin getWrapSize($imageSize) {
   $wrapSize: calc(#{$imageSize} + 55px);
   width: $wrapSize;
   height: $wrapSize;
 }
 
-@mixin getTranslate ($imageSize) {
+@mixin getTranslate($imageSize) {
   transform: rotate(-45deg) translateY(calc((#{$imageSize} / 3) * -1));
 }
 
@@ -29,18 +29,12 @@ $smallSize: 65px;
 
     .image {
       margin: 0;
-      transform: rotate(45deg) translateY(10px) scale(0.5);
     }
 
     .image,
     .image div {
       width: $smallSize;
       height: $smallSize;
-    }
-
-    .image .wrap {
-      @include getWrapSize($smallSize);
-      @include getTranslate($smallSize);
     }
   }
 
@@ -59,23 +53,15 @@ $smallSize: 65px;
     font-weight: 400;
   }
 
-  .image,
-  .image div {
+  .image img {
     margin: 0 auto;
-    transform-origin: 50% 50%;
     overflow: hidden;
-    width: $normalSize;
-    height: $normalSize;
+    width: 120px;
+    height: 120px;
   }
 
   .image {
     margin-bottom: 50px;
-    transform: rotate(45deg) translateY(10px);
-  }
-
-  .image .wrap {
-    @include getWrapSize($normalSize);
-    @include getTranslate($normalSize);
   }
 
   .image .wrap img {

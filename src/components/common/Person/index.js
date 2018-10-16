@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 
-import LazyLoad from 'react-lazyload'
+import LazyLoad from "react-lazyload";
 
-import defaultImage from './default.png'
-import './index.scss'
+import defaultImage from "./default.png";
+import "./index.scss";
 
 class Person extends Component {
   static propTypes = {
@@ -12,67 +12,70 @@ class Person extends Component {
     name: PropTypes.string,
     position: PropTypes.string,
     image: PropTypes.string
-  }
+  };
   static defaultProps = {
     small: false,
-    name: '',
-    position: '',
-    image: ''
-  }
+    name: "",
+    position: "",
+    image: ""
+  };
 
-  get image () {
-    const { image } = this.props
+  state = {
+    error: false
+  };
 
-    if (image === '') {
-      return defaultImage
+  get image() {
+    const { image } = this.props;
+
+    if (image === "") {
+      return defaultImage;
     }
 
-    return image
+    return image;
   }
 
-  get photo () {
+  get photo() {
     return (
-      <div className='image'>
-        <div className='wrap'>
-          <LazyLoad height={100}>
-            <img src={this.image} />
-          </LazyLoad>
-        </div>
+      <div className="image">
+        <img
+          src={this.state.error ? defaultImage : this.image}
+          onError={() => this.setState({ error: true })}
+        />
       </div>
-    )
+    );
   }
 
-  get className () {
-    const { small } = this.props
-    let className = 'Person'
+  get className() {
+    const { small } = this.props;
+    let className = "Person";
 
     if (small) {
-      className += ' small'
+      className += " small";
     }
 
-    return className
+    return className;
   }
 
-  get name () {
-    const { name, position, small } = this.props
-    let subtitle = small ? null : <h3>{position}</h3>
+  get name() {
+    const { name, position, small } = this.props;
+    let subtitle = small ? null : <h3>{position}</h3>;
 
     return (
-      <div className='name'>
+      <div className="name">
         <h1> {name} </h1>
         {subtitle}
       </div>
-    )
+    );
   }
 
-  render () {
+  render() {
     return (
       <div className={this.className}>
         {this.photo}
         {this.name}
       </div>
-    )
+    );
   }
 }
 
-export default Person
+export default Person;

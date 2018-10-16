@@ -11,12 +11,7 @@ class People extends Component {
     people: PropTypes.array
   };
   static defaultProps = {
-    people: Array(10).fill({
-      name: "Ion Pop",
-      position: "Tester",
-      image:
-        "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/tmp/webdr02/2/17/0e7cd6da3ce720d983515a9ab831a530-3.jpg?downsize=715:*&output-format=auto&output-quality=auto"
-    })
+    people: []
   };
 
   get list() {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 
 import Header from "../components/Header";
 import WhySric from "../components/WhySric";
@@ -58,6 +58,12 @@ interface IProps {
 }
 
 class Home extends Component<IProps> {
+  static defaultProps: Partial<IProps> = {
+    data: {
+      dataJson: { courses: [] }
+    }
+  };
+
   get courses(): Course[] {
     const {
       data: {
@@ -77,8 +83,12 @@ class Home extends Component<IProps> {
   }
 
   render() {
+    if (this.props.data.dataJson === null) {
+      return null;
+    }
+
     return (
-      <div>
+      <Fragment>
         <Header />
         <Schedule courses={this.courses} />
         <WhySric />
@@ -86,7 +96,7 @@ class Home extends Component<IProps> {
         <Community events={events} />
         <People />
         <Contact />
-      </div>
+      </Fragment>
     );
   }
 }

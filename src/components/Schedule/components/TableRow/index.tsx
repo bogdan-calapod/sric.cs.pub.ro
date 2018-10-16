@@ -11,13 +11,18 @@ interface IProps {
   options: Option[];
   selected: string;
   title: string;
-  onChange: (option: Option) => void;
+  onChange: (selected: string) => void;
 }
 
 class TableRow extends Component<IProps> {
+  onChange = (cell: Option) => {
+    if (!cell.disabled) {
+      this.props.onChange(cell.title);
+    }
+  };
+
   getCell = (cell: Option, key: number): ReactNode => {
     const { selected } = this.props;
-    const onChange = () => this.props.onChange(cell);
 
     let className = "cell";
 
@@ -30,7 +35,7 @@ class TableRow extends Component<IProps> {
     }
 
     return (
-      <div key={key} className={className} onClick={onChange}>
+      <div key={key} className={className} onClick={() => this.onChange(cell)}>
         <span>{cell.title}</span>
       </div>
     );

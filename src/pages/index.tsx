@@ -8,8 +8,6 @@ import People from "../components/People";
 import Contact from "../components/Contact";
 import Schedule, { Course } from "../components/Schedule";
 
-import Button from "../components/common/Button";
-
 import "../index.scss";
 
 const events = [
@@ -41,15 +39,40 @@ const person = {
 const courses: Course[] = [
   {
     semester: 1,
+    active: true,
     name: "Computer and Network Security",
     roname: "Securitatea Calculatoarelor și Rețelelor",
     description:
-      "Computer and Network Security class covers the topic of computer and network security, from advanced cryptographic techniques, innovative algorithms, security protocols and policies, trust ensuring infrastructures and specific technologies for securing networks. At the end of this class, the students should be able to: develop a complex security policy for ensuring the safety of the provided services, identify threats and vulnerabilities at network and operating system level, identify types of attacks and mitigate them, identify the vulnerabilities of layer 2 and 3 equipments, implement a solution for ensuring a high level of security for the equipments, monitor the network, servers and workstations for identifying and stopping attacks, configuring a firewall, an IDS/IPS and an AAA system. This class also has an important practical component, which includes: configuring routers that define the network perimeter with the use of specific instruction set for ensuring a high level of security, configuring layer 2 and 3 equipments in a safe manner, configuring a firewall for allowing basic network operations, configuring an IDS/IPS, configuring AAA both on routers and switches."
+      "Computer and Network Security class covers the topic of computer and network security, from advanced cryptographic techniques, innovative algorithms, security protocols and policies, trust ensuring infrastructures and specific technologies for securing networks. At the end of this class, the students should be able to: develop a complex security policy for ensuring the safety of the provided services, identify threats and vulnerabilities at network and operating system level, identify types of attacks and mitigate them, identify the vulnerabilities of layer 2 and 3 equipments, implement a solution for ensuring a high level of security for the equipments, monitor the network, servers and workstations for identifying and stopping attacks, configuring a firewall, an IDS/IPS and an AAA system. This class also has an important practical component, which includes: configuring routers that define the network perimeter with the use of specific instruction set for ensuring a high level of security, configuring layer 2 and 3 equipments in a safe manner, configuring a firewall for allowing basic network operations, configuring an IDS/IPS, configuring AAA both on routers and switches.",
+    url: "http://ocw.cs.pub.ro",
+    image: "http://picsum.photos/100?random",
+    teachers: ["Ion Popescu", "Andrei Ionescu"],
+    buttonText: "hello"
   },
-  url: 'http://ocw.cs.pub.ro',
-  image: 'http://picsum.photos/100?random',
-  teachers: ['Ion Popescu', 'Andrei Ionescu'],
-  buttonText: 'hello'
+  {
+    semester: 1,
+    active: false,
+    name: "Elective Course",
+    roname: "Securitatea Calculatoarelor și Rețelelor",
+    description:
+      "Computer and Network Security class covers the topic of computer and network security, from advanced cryptographic techniques, innovative algorithms, security protocols and policies, trust ensuring infrastructures and specific technologies for securing networks. At the end of this class, the students should be able to: develop a complex security policy for ensuring the safety of the provided services, identify threats and vulnerabilities at network and operating system level, identify types of attacks and mitigate them, identify the vulnerabilities of layer 2 and 3 equipments, implement a solution for ensuring a high level of security for the equipments, monitor the network, servers and workstations for identifying and stopping attacks, configuring a firewall, an IDS/IPS and an AAA system. This class also has an important practical component, which includes: configuring routers that define the network perimeter with the use of specific instruction set for ensuring a high level of security, configuring layer 2 and 3 equipments in a safe manner, configuring a firewall for allowing basic network operations, configuring an IDS/IPS, configuring AAA both on routers and switches.",
+    url: "http://ocw.cs.pub.ro",
+    image: "http://picsum.photos/100?random",
+    teachers: ["Ion Popescu", "Andrei Ionescu"],
+    buttonText: "hello"
+  },
+  {
+    semester: 2,
+    active: true,
+    name: "Computer and Network Securitsy",
+    roname: "Securitatea Calculatoarelor și Rețelelor",
+    description:
+      "Computer and Network Security class covers the topic of computer and network security, from advanced cryptographic techniques, innovative algorithms, security protocols and policies, trust ensuring infrastructures and specific technologies for securing networks. At the end of this class, the students should be able to: develop a complex security policy for ensuring the safety of the provided services, identify threats and vulnerabilities at network and operating system level, identify types of attacks and mitigate them, identify the vulnerabilities of layer 2 and 3 equipments, implement a solution for ensuring a high level of security for the equipments, monitor the network, servers and workstations for identifying and stopping attacks, configuring a firewall, an IDS/IPS and an AAA system. This class also has an important practical component, which includes: configuring routers that define the network perimeter with the use of specific instruction set for ensuring a high level of security, configuring layer 2 and 3 equipments in a safe manner, configuring a firewall for allowing basic network operations, configuring an IDS/IPS, configuring AAA both on routers and switches.",
+    url: "http://ocw.cs.pub.ro",
+    image: "http://picsum.photos/100?random",
+    teachers: ["Ion Popescu", "Andrei Ionescu"],
+    buttonText: "hello"
+  }
 ];
 
 class Home extends Component {

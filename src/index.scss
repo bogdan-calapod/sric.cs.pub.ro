@@ -91,7 +91,7 @@ button {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   outline: none;
 }
 /* HTML5 display-role reset for older browsers */
@@ -124,7 +124,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -138,12 +138,11 @@ a:visited {
   text-decoration: none;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900&subset=latin-ext");
 
 /* Colors */
 * {
-  --primary: #E08003;
+  --primary: #e08003;
   --secondary: #063551;
 }
 
@@ -157,5 +156,5 @@ section {
   margin: 0 auto;
   padding: 15px;
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1400px;
 }

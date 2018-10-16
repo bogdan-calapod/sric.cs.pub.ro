@@ -1,0 +1,23 @@
+image: node:10
+
+before_script:
+  - "which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)"
+  #- eval $(ssh-agent -s)
+  #- ssh-add <(echo "$SSH_PRIVATE_KEY")
+  #- ssh-add <(echo "$SSH_PUBLIC_KEY")
+  - mkdir -p ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+  - echo "$SSH_PUBLIC_KEY" > ~/.ssh/id_rsa.pub
+  - chmod 0600 -R ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  - '[[ -f /.dockerenv ]] && echo "$SSH_SERVER_HOSTKEYS" > ~/.ssh/known_hosts'
+  - rm -rf node_modules
+  - npm install
+
+deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - npm run build
+    - scp -r public/* bogdan.calapod@systems.cs.pub.ro:/var/www/sric.cs.pub.ro

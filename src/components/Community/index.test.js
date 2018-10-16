@@ -14,7 +14,7 @@ describe('Community', () => {
   it('renders a TabBar', () => {
     const props = {
       events: [
-        {
+        { 
           title: 'Test',
           text: 'Test',
           image: 'Test'

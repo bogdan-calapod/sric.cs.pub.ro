@@ -47,11 +47,6 @@ const people = [
     image: "/photos/mihaicarabas.png"
   },
   {
-    name: "Alex Carp",
-    position: "Assistant Professor",
-    image: "/photos/alexcarp"
-  },
-  {
     name: "Mihai Chiroiu",
     position: "Assistant Professor",
     image: "/photos/mihaichiroiu.png"

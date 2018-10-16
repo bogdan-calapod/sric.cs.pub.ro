@@ -46,6 +46,7 @@ class TableRow extends Component<IProps> {
     return options.map(this.getCell);
   }
 
+  // Split title by ':'
   get title() {
     const { title } = this.props;
 

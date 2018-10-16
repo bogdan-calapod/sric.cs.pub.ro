@@ -25,7 +25,7 @@
       "active": "TRUE",
       "name": "Startup Engineering",
       "roname": "Dezvoltarea de Software în Startup-uri",
-      "desc": "",
+      "desc": "This course offers students an introduction to the startup world, an overview of the modern web technologies, and equips them with the technical skills required to start a web startup. ",
       "url": "http://ocw.cs.pub.ro/courses/se",
       "logo": "/files/StartupEngineeringlogo.png",
       "teachers": "Emilian Rădoi"
@@ -48,7 +48,7 @@
       "semester": "1",
       "active": "TRUE",
       "name": "Research",
-      "roname": "",
+      "roname": "Cercetare",
       "desc": "Research projects may address topics such as: network architectures, operating systems, wireless sensor networks, peer-to-peer systems, network security and mobile platforms. Network architecture research focuses on designing, implementing, optimizing and evaluating communication networks. Research covers all network communication layers, taking into consideration both the hardware and software solutions required for building a communication network.WSN research focuses on improving resource consumption, scalability, adaptability, reliability, fault-tolerance, security, self-configurability and QoS in sensor networks, with a focus on security mechanisms, trust and reputation models, routing protocols and simulation tools;The main challenges in the Peer-to-Peer systems consist of dealing with rogue peers, differentiated participation, high peer churn, and resource availability. In order to solve these challenges, research has focused on developing and testing new architectures for resource sharing, new communication protocols, extending current clients and evaluating new and efficient ways of peer interaction.Network security research focuses on improving authentication protocols, intrusion detection and prevention systems, and network device security.Mobile devices raise several development challenges, such as power consumption, application connectivity, and reduced screen real-estate. Research tries to tackle these challenges by leveraging operating system features, designing new and improved algorithms for resource management, and using the latest technologies for interconnecting devices.",
       "url": "https://systems.cs.pub.ro/teaching/master-projects/",
       "logo": "/files/Researchlogo.png",

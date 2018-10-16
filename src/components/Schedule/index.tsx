@@ -8,6 +8,7 @@ import Title from "../common/Title";
 
 import TableRow from "./components/TableRow";
 import "./index.scss";
+import CourseDetails from "./components/CourseDetails";
 
 export interface Course {
   semester: 1 | 2 | 3 | 4;
@@ -35,10 +36,28 @@ interface IState {
   active: Course;
 }
 
+const DUMMY_COURSE: Course = {
+  semester: 1,
+  active: false,
+  name: "",
+  roname: "",
+  description: "",
+  url: "",
+  logo: "",
+  teachers: [],
+  buttonText: ""
+};
+
 class Schedule extends Component<IProps, IState> {
   public state: IState = {
     active: null
   };
+
+  componentDidMount() {
+    const { courses } = this.props;
+    const active = courses[0];
+    this.setState({ active });
+  }
 
   updateSelection = (selected: string): void => {
     const { courses } = this.props;
@@ -65,13 +84,13 @@ class Schedule extends Component<IProps, IState> {
     );
   }
 
-  get selected(): Course | Partial<Course> {
+  get selected(): Course {
     const { active } = this.state;
 
     if (active) {
       return active;
     } else {
-      return { name: "" };
+      return DUMMY_COURSE;
     }
   }
 
@@ -106,6 +125,7 @@ class Schedule extends Component<IProps, IState> {
       <section className="Schedule">
         <Title right>Courses</Title>
         {this.rows}
+        <CourseDetails course={this.selected} />
       </section>
     );
   }

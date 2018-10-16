@@ -1,8 +1,6 @@
 .TableRow {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-
   background-color: white;
 
   &:nth-child(odd) {
@@ -10,11 +8,18 @@
   }
 
   .cell {
+    flex: 1;
     padding: 15px;
     text-align: center;
     cursor: pointer;
     border-left: 5px solid transparent;
     transition: 0.4s all;
+    margin: 0;
+
+    &:first-child {
+      width: 200px;
+      flex-grow: 0;
+    }
 
     &.disabled {
       text-transform: uppercase;

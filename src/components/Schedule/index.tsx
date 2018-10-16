@@ -4,8 +4,11 @@
 
 import React, { Component, ReactNodeArray } from "react";
 
+import Title from "../common/Title";
+
 import TableRow from "./components/TableRow";
 import "./index.scss";
+import CourseDetails from "./components/CourseDetails";
 
 export interface Course {
   semester: 1 | 2 | 3 | 4;
@@ -14,7 +17,7 @@ export interface Course {
   roname: string;
   description: string;
   url: string;
-  image: string;
+  logo: string;
   teachers: string[];
   buttonText: string;
 }
@@ -33,10 +36,28 @@ interface IState {
   active: Course;
 }
 
+const DUMMY_COURSE: Course = {
+  semester: 1,
+  active: false,
+  name: "",
+  roname: "",
+  description: "",
+  url: "",
+  logo: "",
+  teachers: [],
+  buttonText: ""
+};
+
 class Schedule extends Component<IProps, IState> {
   public state: IState = {
     active: null
   };
+
+  componentDidMount() {
+    const { courses } = this.props;
+    const active = courses[0];
+    this.setState({ active });
+  }
 
   updateSelection = (selected: string): void => {
     const { courses } = this.props;
@@ -50,7 +71,9 @@ class Schedule extends Component<IProps, IState> {
 
     return [
       courses.filter(course => course.semester === 1),
-      courses.filter(course => course.semester === 2)
+      courses.filter(course => course.semester === 2),
+      courses.filter(course => course.semester === 3),
+      courses.filter(course => course.semester === 4)
     ].map(courses =>
       courses.map(
         (course: Course): Option => ({
@@ -61,13 +84,13 @@ class Schedule extends Component<IProps, IState> {
     );
   }
 
-  get selected(): Course | Partial<Course> {
+  get selected(): Course {
     const { active } = this.state;
 
     if (active) {
       return active;
     } else {
-      return { name: "" };
+      return DUMMY_COURSE;
     }
   }
 
@@ -98,7 +121,13 @@ class Schedule extends Component<IProps, IState> {
   }
 
   public render() {
-    return <section className="Schedule">{this.rows}</section>;
+    return (
+      <section className="Schedule">
+        <Title right>Courses</Title>
+        {this.rows}
+        <CourseDetails course={this.selected} />
+      </section>
+    );
   }
 }
 

@@ -4,6 +4,8 @@
 
 import React, { Component, ReactNodeArray } from "react";
 
+import Title from "../common/Title";
+
 import TableRow from "./components/TableRow";
 import "./index.scss";
 
@@ -14,7 +16,7 @@ export interface Course {
   roname: string;
   description: string;
   url: string;
-  image: string;
+  logo: string;
   teachers: string[];
   buttonText: string;
 }
@@ -50,7 +52,9 @@ class Schedule extends Component<IProps, IState> {
 
     return [
       courses.filter(course => course.semester === 1),
-      courses.filter(course => course.semester === 2)
+      courses.filter(course => course.semester === 2),
+      courses.filter(course => course.semester === 3),
+      courses.filter(course => course.semester === 4)
     ].map(courses =>
       courses.map(
         (course: Course): Option => ({
@@ -98,7 +102,12 @@ class Schedule extends Component<IProps, IState> {
   }
 
   public render() {
-    return <section className="Schedule">{this.rows}</section>;
+    return (
+      <section className="Schedule">
+        <Title right>Courses</Title>
+        {this.rows}
+      </section>
+    );
   }
 }
 

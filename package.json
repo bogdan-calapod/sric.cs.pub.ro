@@ -13,6 +13,8 @@
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-sass": "^2.0.1",
     "gatsby-plugin-typescript": "^2.0.0",
+    "gatsby-source-filesystem": "^2.0.4",
+    "gatsby-transformer-json": "^2.1.4",
     "react-helmet": "^5.2.0",
     "react-lazyload": "^2.3.0",
     "react-markdown": "^4.0.3",

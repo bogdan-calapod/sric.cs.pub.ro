@@ -116,7 +116,7 @@
     {
       "semester": "3",
       "active": "TRUE",
-      "name": "Parallel and Distributed Systems",
+      "name": "Cloud Security",
       "roname": "Sisteme Paralele și Distribuite",
       "desc": "The course presents a new approach of parallel and distributed system, which consists of a collection of interconnected stand-alone heterogeneous systems cooperatively working together as a single, integrated computing resource. In the course are presented the type of clusters, cluster architecture, new concept in OS services for distributed processing, physical cluster interconnections and interconnect support, cluster programming environments, monitoring and performance analysis tools. The course presents the essence of Grids how to utilize highly flexible network architectures, and how to sharing of all computing resources, not just data. Are presented the grid technologies, an extensible and open Grid architecture, general aspects of basic components that enable interoperability among different Grid resources. There are presented the principal Grid characteristics: Wide geographical distribution, Heterogeneous, Resource sharing, Multiple admin policies, Resource coordination, Transparent access, Dependable, Consistent, Pervasive.  It is presented a Sample Grid Computing Environment: Resource Sharing & Aggregation and Grid Architecture for Computational Economy. The Layered Grid Architecture is presented.In the second part of the course the students have to choose a topic of application of the Grid computing and they have to present an essay about it.",
       "url": "http://ocw.cs.pub.ro/courses/spd.svg",

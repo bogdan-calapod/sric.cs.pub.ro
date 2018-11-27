@@ -36,7 +36,7 @@ class TableRow extends Component<IProps> {
 
     return (
       <div key={key} className={className} onClick={() => this.onChange(cell)}>
-        <span>{cell.title}</span>
+        <span>{cell.title.split(':')[0]}</span>
       </div>
     );
   };

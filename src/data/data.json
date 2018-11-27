@@ -7,7 +7,7 @@
       "roname": "Securitatea Rețelelor cu Echipamente Dedicate",
       "desc": "Securing Networks with Dedicated Equipment focuses on advanced security topics in networking, providing knowledge and skills required to plan, implement, and configure a secure, scalable, redundant and convergent network using dedicated firewalling systems and Unified Threat Management. Course concepts are introduced and studied in depth using equipment from multiple producers, offering a comparative analysis of performance, facility in implementation and scalability, for each technology. With a strong practical dimension, the laboratory consists in activities that implement concepts introduced through the theoretical course, following architectures and case studies selected from the configurations of networks deployed in real, enterprise settings. During the laboratory students will configure firewalls in transparent and routed modes, advanced IP services, virtual firewalls and security contexts, IPSec tunneling and site-to-site VPNs, SSL VPNs for distance access, redundancy at firewall access, and solutions for Unified Threat Management with antivirus, antispam, antispyware and data-theft prevention services. When finalizing the course, students will benefit from an ample perspective on security levels available in current network architectures, and they will be able to design, implement, monitor and troubleshoot a security solution at enterprise level.",
       "url": "http://ocw.cs.pub.ro/courses/sred",
-      "logo": "/files/SecuringNetworkswithDedicatedEquipmentlogo.png",
+      "logo": "/files/courses/sred.svg",
       "teachers": "Mihai Chiroiu"
     },
     {
@@ -17,7 +17,7 @@
       "roname": "Securitatea Calculatoarelor și Rețelelor",
       "desc": "Computer and Network Security class covers the topic of computer and network security, from advanced cryptographic techniques, innovative algorithms, security protocols and policies, trust ensuring infrastructures and specific technologies for securing networks. At the end of this class, the students should be able to: develop a complex security policy for ensuring the safety of the provided services, identify threats and vulnerabilities at network and operating system level, identify types of attacks and mitigate them, identify the vulnerabilities of layer 2 and 3 equipments, implement a solution for ensuring a high level of security for the equipments, monitor the network, servers and workstations for identifying and stopping attacks, configuring a firewall, an IDS/IPS and an AAA system. This class also has an important practical component, which includes: configuring routers that define the network perimeter with the use of specific instruction set for ensuring a high level of security, configuring layer 2 and 3 equipments in a safe manner, configuring a firewall for allowing basic network operations, configuring an IDS/IPS, configuring AAA both on routers and switches.",
       "url": "http://ocw.cs.pub.ro/courses/scr",
-      "logo": "/files/ComputerandNetworkSecuritylogo.png",
+      "logo": "/files/courses/cns.svg",
       "teachers": "Răzvan Deaconescu"
     },
     {
@@ -27,7 +27,7 @@
       "roname": "Dezvoltarea de Software în Startup-uri",
       "desc": "This course offers students an introduction to the startup world, an overview of the modern web technologies, and equips them with the technical skills required to start a web startup. ",
       "url": "http://ocw.cs.pub.ro/courses/se",
-      "logo": "/files/StartupEngineeringlogo.png",
+      "logo": "/files/courses/se.svg",
       "teachers": "Emilian Rădoi"
     },
     {
@@ -62,7 +62,7 @@
       "roname": "Infrastructură și Servicii pentru Rețele Mobile",
       "desc": "The course covers topics in most popular wireless access methods today: WiFi and 3G/4G. These last hop networks are in every pocket today, but they don’t always deliver a seamless Internet experience. The course covers the principles, standards, implementations, and how are these reflected in real world usage.\nBeside a distillation of the standards, the course involves reading high quality research results in the wireless networks area, and therefore has a second role of familiarizing students with critically evaluating research results. They get introduced to recent literature and get to evaluate how and when a solution to a research problem becomes a standard, or a successful technology.\nAfter completing the course students will have a working knowledge of the problems of designing, managing and diagnosing wireless networks. Students will also be able to efficiently read a scientific paper and critically judge its premises, results, technical achievements, measurement results, quality of implementation, and future potential.",
       "url": "http://ocw.cs.pub.ro/courses/isrm",
-      "logo": "/files/InfrastructuresandServicesforMobileNetworkslogo.png",
+      "logo": "/files/courses/isrm.svg",
       "teachers": "Dragoș Niculescu"
     },
     {
@@ -72,7 +72,7 @@
       "roname": "Securitatea Dispozitivelor Mobile",
       "desc": "This course presents the security architecture of mobile operating systems and describes attacks against mobile devices.",
       "url": "http://ocw.cs.pub.ro/courses/smd",
-      "logo": "/files/MobileSecuritylogo.png",
+      "logo": "/files/courses/smd.svg",
       "teachers": "Vlad Traistă Popescu, Laura Ruse"
     },
     {
@@ -82,7 +82,7 @@
       "roname": "Antreprenoriat și Inovare Digitală",
       "desc": "How do you get from a sound engineering plan to a minimum viable product",
       "url": "http://ocw.cs.pub.ro/courses/team",
-      "logo": "/files/DigitalInnovationTechnicalEntrepreneurshipandManagementlogo.png",
+      "logo": "/files/courses/team.svg",
       "teachers": "Răzvan Rughiniș"
     },
     {
@@ -106,22 +106,22 @@
     {
       "semester": "3",
       "active": "TRUE",
-      "name": "Parallel and Distributed Systems",
-      "roname": "Sisteme Paralele și Distribuite",
-      "desc": "The course presents a new approach of parallel and distributed system, which consists of a collection of interconnected stand-alone heterogeneous systems cooperatively working together as a single, integrated computing resource. In the course are presented the type of clusters, cluster architecture, new concept in OS services for distributed processing, physical cluster interconnections and interconnect support, cluster programming environments, monitoring and performance analysis tools. The course presents the essence of Grids how to utilize highly flexible network architectures, and how to sharing of all computing resources, not just data. Are presented the grid technologies, an extensible and open Grid architecture, general aspects of basic components that enable interoperability among different Grid resources. There are presented the principal Grid characteristics: Wide geographical distribution, Heterogeneous, Resource sharing, Multiple admin policies, Resource coordination, Transparent access, Dependable, Consistent, Pervasive.  It is presented a Sample Grid Computing Environment: Resource Sharing & Aggregation and Grid Architecture for Computational Economy. The Layered Grid Architecture is presented.In the second part of the course the students have to choose a topic of application of the Grid computing and they have to present an essay about it.",
-      "url": "http://ocw.cs.pub.ro/courses/spd",
-      "logo": "/files/ParallelandDistributedSystemslogo.png",
-      "teachers": "Nicolae Țăpuș, Mihai Carabaș"
+      "name": "Auditing Network Security",
+      "roname": "Auditarea securității rețelelor",
+      "desc": "The course “Auditing Network Security” promotes knowledge of main concepts regarding the design of an audit for information system, starting from technical principles and current technologies, and then including considerations concerning ethical issues and legal concerns of implementation. Students will learn about the relevance of audit activities for present-day activities, current trends in this field, and specific methods for information gathering. The course involves students in practical activities, aiming for the development of dedicated knowledge and skills for solving typical problems in network auditing, for each stage. Students will learn to identify relevant vulnerabilities and security risks, to test for their presence, to evaluate their seriousness, and to elaborate a report. Practical activities are designed to encourage students to develop their own action plan, with a high degree of autonomy, and to search for relevant, updated information. After completing the course, students will acquire the capacity to diagnose functioning problems in complex networks, especially security problems, and to propose alternative solutions, taking into account financial, time, and human resource constraints. Students will also develop their knowledge and skills concerning the provision and evaluation of information security, their capacity to find relevant information for current problems, to communicate directly, to elaborate technical documents and to put to practical use information from scientific research concerning complex network security.",
+      "url": "http://ocw.cs.pub.ro/courses/asr.svg",
+      "logo": "/files/courses/asr.svg",
+      "teachers": "Ion Bică"
     },
     {
       "semester": "3",
       "active": "TRUE",
-      "name": "Auditing Network Security",
-      "roname": "Auditarea securității rețelelor",
-      "desc": "The course “Auditing Network Security” promotes knowledge of main concepts regarding the design of an audit for information system, starting from technical principles and current technologies, and then including considerations concerning ethical issues and legal concerns of implementation. Students will learn about the relevance of audit activities for present-day activities, current trends in this field, and specific methods for information gathering. The course involves students in practical activities, aiming for the development of dedicated knowledge and skills for solving typical problems in network auditing, for each stage. Students will learn to identify relevant vulnerabilities and security risks, to test for their presence, to evaluate their seriousness, and to elaborate a report. Practical activities are designed to encourage students to develop their own action plan, with a high degree of autonomy, and to search for relevant, updated information. After completing the course, students will acquire the capacity to diagnose functioning problems in complex networks, especially security problems, and to propose alternative solutions, taking into account financial, time, and human resource constraints. Students will also develop their knowledge and skills concerning the provision and evaluation of information security, their capacity to find relevant information for current problems, to communicate directly, to elaborate technical documents and to put to practical use information from scientific research concerning complex network security.",
-      "url": "http://ocw.cs.pub.ro/courses/asr",
-      "logo": "/files/AuditingNetworkSecuritylogo.png",
-      "teachers": "Ion BIcă"
+      "name": "Parallel and Distributed Systems",
+      "roname": "Sisteme Paralele și Distribuite",
+      "desc": "The course presents a new approach of parallel and distributed system, which consists of a collection of interconnected stand-alone heterogeneous systems cooperatively working together as a single, integrated computing resource. In the course are presented the type of clusters, cluster architecture, new concept in OS services for distributed processing, physical cluster interconnections and interconnect support, cluster programming environments, monitoring and performance analysis tools. The course presents the essence of Grids how to utilize highly flexible network architectures, and how to sharing of all computing resources, not just data. Are presented the grid technologies, an extensible and open Grid architecture, general aspects of basic components that enable interoperability among different Grid resources. There are presented the principal Grid characteristics: Wide geographical distribution, Heterogeneous, Resource sharing, Multiple admin policies, Resource coordination, Transparent access, Dependable, Consistent, Pervasive.  It is presented a Sample Grid Computing Environment: Resource Sharing & Aggregation and Grid Architecture for Computational Economy. The Layered Grid Architecture is presented.In the second part of the course the students have to choose a topic of application of the Grid computing and they have to present an essay about it.",
+      "url": "http://ocw.cs.pub.ro/courses/spd.svg",
+      "logo": "/files/courses/cs.svg",
+      "teachers": "Nicolae Țăpuș, Mihai Carabaș"
     },
     {
       "semester": "3",
@@ -131,7 +131,6 @@
       "desc": "",
       "url": "",
       "logo": "",
-      "teachers": "",
       "customButton": ""
     },
     {

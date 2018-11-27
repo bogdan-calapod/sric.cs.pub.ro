@@ -5,7 +5,6 @@ module.exports = {
   pathPrefix: "/",
   plugins: [
     "gatsby-plugin-typescript",
-    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

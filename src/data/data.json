@@ -38,13 +38,6 @@
       "logo": ""
     },
     {
-      "semester": "4",
-      "active": "FALSE",
-      "name": "Graduation Project",
-      "roname": "",
-      "logo": ""
-    },
-    {
       "semester": "1",
       "active": "TRUE",
       "name": "Research",
@@ -150,6 +143,17 @@
       "logo": "/files/Researchlogo.png",
       "teachers": "",
       "customButton": "Topics & calendar"
+    },
+    {
+      "semester": "4",
+      "active": "FALSE",
+      "name": "Graduation Project",
+      "roname": "",
+      "desc": "",
+      "url": "",
+      "logo": "",
+      "teachers": "",
+      "customButton": ""
     }
   ]
 }

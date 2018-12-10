@@ -26,6 +26,7 @@
     "start": "gatsby develop --open",
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "deploy": "./util/deploy.sh",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
     "test": "jest",
     "test-coverage": "jest --coverage"

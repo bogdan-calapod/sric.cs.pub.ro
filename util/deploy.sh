@@ -17,6 +17,8 @@ else
   echo "➰  Running downloader..."
   cd "${HARMONIA_LOCATION}"
   npm run start "-- --config=${downloaderConfig}"
+  cd ../downloadedContent/
+  cp sric.data.json "${startDir}/src/data/data.json"
   echo "➰  Running builder..."
   cd "${startDir}"
   npm run build

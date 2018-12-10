@@ -7,10 +7,11 @@
 # VARIABLES
 startDir="$(pwd)"
 downloaderConfig="config.json"
-destination="/home/bogdan/test/"
 
 if  [[ -z "${HARMONIA_LOCATION}" ]]; then
-  echo $"❗  Envvar unset. Quitting...";
+  echo $"❗  Harmonia location envvar unset. Quitting...";
+elif  [[ -z "${SRIC_DESTINATION_LOCATION}" ]]; then
+  echo $"❗  SRIC destination location envvar unset. Quitting...";
 else 
   echo "➰  Current dir is ${startDir}";
   echo "➰  Running downloader..."
@@ -20,6 +21,6 @@ else
   cd "${startDir}"
   npm run build
   echo "➰  Copying files..."
-  cp -r public/* "${destination}"
+  cp -r public/* "${SRIC_DESTINATION_LOCATION}"
   echo "✔  Build finished."
 fi

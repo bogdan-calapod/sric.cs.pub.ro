@@ -25,7 +25,6 @@ class HowToApply extends Component {
             The admission exam consists of two stages: the closed-ended quiz and
             the presentation of the research theme.
           </p>
-          </div>
           <div className="split">
             <h1>Presentation of research theme</h1>
             <p>

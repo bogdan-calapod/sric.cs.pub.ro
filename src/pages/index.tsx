@@ -15,18 +15,17 @@ const events = [
   {
     title: "Security Summer School",
     text:
-      "Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place in June 2018! \n\nIn 2016, the third edition of the Security Summer School engaged students between June 20th and July 25th, at the Faculty of Automatic Control and Computers, UPB, focusing on Practical Software Exploitation. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor. \n\n Activities took place during three intensive training sessions per week, as well as two Capture the Flag (CTF) contests which were held mid-term and at the end of the summer school. \n\nThe final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.",
+      "Do you want to gain an edge and make new friends in the cybersecurity community? The next edition of the Security Summer School will take place online in June-July 2022!\n\n The 9th edition will feature a new track: Security Essentials targeted at those making their first steps in the world of security. We'll also feature a mini-track on Hardware Security. This mini-track won't have a CTF, and will be accessible to all participants from the Binary and Web tracks.\n\nIn 2021, the 8th edition of the Security Summer School engaged 31 participants and 16 trainers for 128 hours of training and contests, on two tracks - Binary and Web, between June 27 - August 1, 2021. Students went through an in-depth tour of what it means to discover, successfully exploit and patch a software vulnerability, developing the necessary skills and insights for such an endeavor.\n\nThe final CTF contest was the highlight of the summer school, as students were able to showcase their new skills.",
     image: "default",
     action: "More info",
     url: "https://security.cs.pub.ro/summer-school/wiki/"
   },
   {
-    title: "Hacker's Night Out",
-    text:
-      "What’s the point of keeping the world cybersafe if we don’t get to tell all those fabulous stories?\n\nAre you a SRIC student? Are you a SRIC teacher? Are you something else? Hold up your wizard night plans for Friday, October 21rd 2016, and join us to Hackers’ Night Out! We’ll be board-gaming, karaoking, musicing, dancing and hacking all around in Room 706 PRECIS from 20:00 till dawn. Don’t knock, come in!\n\n    Please address your inquires to the master of ceremonies at sric@systems.cs.pub.ro",
+    title: "ACS IXIA CTF 2022",
+    text: "ACS IXIA CTF will take place starting from Saturday, April 9, 2022, 11am EEST, until Sunday, April 10, 2022, 11pm EEST.\n\nIn order to take part in the CTF contest, you have to register a team. In order to win one of the three prizes, you need a one person team. If you took part in the previous contests for ACS IXIA CTF, then you may already have an account and you can use that; use password recovery if you don't recall the password.\n\nPrize winners will be announced after the contest; they need to submit a write up of their solutions and proof of their being a school or university bachelor students. Anyone can take part in ACS IXIA CTF, but only school and university bachelor students in Romanian universities are eligible for prizes. There will be three prizes:\n\n -          first prize: monitor\n-          second prize: smartwatch\n-          third prize: gaming chair\n",
     image: "nightout",
-    action: "E-mail MC",
-    url: "mailto:sric@systems.cs.pub.ro"
+    action: "More info",
+    url: "https://acs-ixia-ctf.security.cs.pub.ro/home"
   }
 ];
 

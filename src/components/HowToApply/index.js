@@ -16,32 +16,8 @@ class HowToApply extends Component {
         <div className="step first registration">
           <h1>Registration</h1>
           <p>
-            The SRIC Master's Program offers <span>30 places subsidized</span>
-            by the state budget, and <span>10 places with a tuition fee</span>
-            .
+            Admission - Session July 2022 - Calendar to be announced on <a href="https://acs.pub.ro/admitere/masterat/">https://acs.pub.ro/admitere/masterat/</a>
           </p>
-          <ul className="right">
-            <li className="calendar">
-              <h1>Early registration</h1>
-              <h2>July 11 - 22 2016</h2>
-            </li>
-            <li>
-              <h1>Summer registration</h1>
-              <h2>August 29 - September 13 2016</h2>
-            </li>
-          </ul>
-          <ul className="right">
-            <li className="clock">
-              <h1>Opening times</h1>
-              <h2>Monday - Friday, 9:00 - 15:00</h2>
-            </li>
-          </ul>
-          <ul className="right">
-            <li className="dollar">
-              <h1>Registration fee</h1>
-              <h2>125 RON</h2>
-            </li>
-          </ul>
         </div>
         <div className="step left prep">
           <h1>Prep for admission exam</h1>
@@ -49,12 +25,6 @@ class HowToApply extends Component {
             The admission exam consists of two stages: the closed-ended quiz and
             the presentation of the research theme.
           </p>
-          <div className="split">
-            <h1>Closed-ended quiz</h1>
-            <p>
-              For the quiz exam students must select 4 disciplines and study the
-              respective bibliography.
-            </p>
           </div>
           <div className="split">
             <h1>Presentation of research theme</h1>
@@ -75,7 +45,7 @@ class HowToApply extends Component {
           <ul className="right">
             <li className="calendar">
               <h1>Date</h1>
-              <h2>September 15 2016</h2>
+              <h2>To be announced</h2>
             </li>
           </ul>
           <ul className="right">
@@ -104,11 +74,11 @@ class HowToApply extends Component {
           <ul>
             <li className="calendar">
               <h1>Registration for the SRIC program</h1>
-              <h2>September 18 2016</h2>
+              <h2>To be announced</h2>
             </li>
             <li>
               <h1>Selecting optional courses and signing the contract</h1>
-              <h2>October 3 - 14 2016</h2>
+              <h2>To be announced</h2>
             </li>
           </ul>
         </div>
@@ -119,18 +89,6 @@ class HowToApply extends Component {
             staff, or they may advance their own topic, in agreement with a
             coordinating professor.
           </p>
-          <ul className="right">
-            <li className="calendar">
-              <h1>
-                Academic staff present open research directions to students
-              </h1>
-              <h2>October 13 2016, 19.00</h2>
-            </li>
-            <li>
-              <h1>Research topic selection deadline for students</h1>
-              <h2>October 21 2016</h2>
-            </li>
-          </ul>
         </div>
       </section>
     );

@@ -57,7 +57,7 @@ class WhySric extends Component {
 
         <Modal
           width={1200}
-          height={800}
+          height={600}
           visible={modalOpen}
           onClose={this.toggleModal}
           className="HowToApplyModal"

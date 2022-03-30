@@ -24,7 +24,7 @@ const events = [
     title: "ACS IXIA CTF 2022",
     text: "ACS IXIA CTF will take place starting from Saturday, April 9, 2022, 11am EEST, until Sunday, April 10, 2022, 11pm EEST.\n\nIn order to take part in the CTF contest, you have to register a team. In order to win one of the three prizes, you need a one person team. If you took part in the previous contests for ACS IXIA CTF, then you may already have an account and you can use that; use password recovery if you don't recall the password.\n\nPrize winners will be announced after the contest; they need to submit a write up of their solutions and proof of their being a school or university bachelor students. Anyone can take part in ACS IXIA CTF, but only school and university bachelor students in Romanian universities are eligible for prizes. There will be three prizes:\n\n -          first prize: monitor\n-          second prize: smartwatch\n-          third prize: gaming chair\n",
     image: "nightout",
-    action: "More info"d,
+    action: "More info",
     url: "https://acs-ixia-ctf.security.cs.pub.ro/home"
   }
 ];

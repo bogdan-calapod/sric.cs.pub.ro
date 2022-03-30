@@ -51,9 +51,11 @@ class WhySric extends Component {
             are the ideal candidate for the SRIC masters program.
           </p>
         </TextRow>
+        <div className='howtoButton'>
         <Button image="arrow" onClick={this.toggleModal}>
           How to apply ?
         </Button>
+        </div>
 
         <Modal
           width={1200}

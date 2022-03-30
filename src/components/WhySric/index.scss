@@ -6,6 +6,12 @@
 }
 
 
+@media screen and (max-width: 1200px) {
+  .howtoButton {
+    display: none
+  }
+}
+
 .rodal-dialog {
   height: 80vh !important;
 }

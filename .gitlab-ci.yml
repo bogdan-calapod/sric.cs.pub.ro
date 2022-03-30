@@ -14,4 +14,4 @@ deploy:
   only:
     - master
   script:
-    - ssh bogdan.calapod@tech-lounge.ro 'cd /home/bogdan.calapod/sric && npm run build && cp -r public/* /var/www/sric.cs.pub.ro/'
+    - ssh bogdan.calapod@tech-lounge.ro 'cd /home/bogdan.calapod/sric && git pull && npm run build && cp -r public/* /var/www/sric.cs.pub.ro/'

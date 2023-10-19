@@ -15,12 +15,6 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: ""
-      }
-    },
-    {
       resolve: `gatsby-plugin-hotjar`,
       options: {
         id: 0,
